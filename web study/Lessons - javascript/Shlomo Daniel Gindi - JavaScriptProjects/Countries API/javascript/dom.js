@@ -39,12 +39,12 @@ const createCard = (country) => {
     const cardFooter = document.createElement('div');
     cardFooter.className = 'card-footer d-flex justify-content-center';
 
-    const heartIcon = document.createElement('i');
-    heartsArray.push(heartIcon);
-    heartIcon.className = 'fa fa-heart text-secondary';
-    heartIcon.addEventListener("click", () => {
-        heartIcon.classList.toggle("text-danger")
-    });
+    // // const heartIcon = document.createElement('i');
+    // // heartsArray.push(heartIcon);
+    // // heartIcon.className = 'fa fa-heart text-secondary';
+    // // heartIcon.addEventListener("click", () => {
+    // //     heartIcon.classList.toggle("text-danger")
+    // });
 
     // append elems
     createdCard.appendChild(cardimg);
@@ -53,7 +53,7 @@ const createCard = (country) => {
     cardBody.appendChild(cardText);
 
     createdCard.appendChild(cardBody);
-    cardFooter.appendChild(heartIcon);
+    // cardFooter.appendChild(heartIcon);
     createdCard.appendChild(cardFooter);
 
     cardsWrap.appendChild(createdCard);
