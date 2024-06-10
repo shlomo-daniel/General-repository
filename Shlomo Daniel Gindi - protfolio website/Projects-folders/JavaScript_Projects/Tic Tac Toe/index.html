@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <h1>Tic Tac Toe</h1>
+
+    <div id="board">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="bottom-elements-wrapper">
+        <div class="buttons-wrap">
+            <button class="new-round" onclick="newRound()">New Round</button>
+            <button class="new-game" onclick="newGame()">New Game</button>
+        </div>
+
+        <div id="players">
+            <div class="currentTurn">
+                <h2>X</h2>
+                <p>Score: <span class="score-points-x">0</span></p>
+            </div>
+
+            <div>
+                <h2>O</h2>
+                <p>Score: <span class="score-points-o">0</span></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

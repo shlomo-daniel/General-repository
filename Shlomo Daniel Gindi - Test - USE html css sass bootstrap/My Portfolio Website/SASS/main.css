@@ -1,0 +1,444 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter-Tight";
+  src: url(../fonts/Inter_Tight-headersFont/InterTight-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Gilda-Display";
+  src: url(../fonts/Gilda_Display/GildaDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: "Joan";
+  src: url(../fonts/Joan/Joan-Regular.ttf);
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  background-color: #00FFDF;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  border-bottom: 4px solid rgba(128, 128, 128, 0.205);
+  background: rgb(0, 159, 255);
+  background: linear-gradient(90deg, rgb(0, 159, 255) 0%, rgb(0, 255, 223) 96%, rgb(0, 32, 255) 100%);
+}
+nav .nav_pic_and_myName {
+  display: flex;
+  align-items: end;
+}
+nav .nav_pic_and_myName .MyFace {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 2em;
+}
+nav .nav_pic_and_myName p {
+  font-family: "Inter-Tight";
+  font-size: 1.5rem;
+}
+nav .nav_menuList {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+nav .nav_menuList ul {
+  display: flex;
+}
+nav .nav_menuList li {
+  font-family: "Gilda-Display";
+  font-size: 1.2rem;
+  list-style: none;
+  margin-inline: 2em;
+}
+nav .nav_menuList li a {
+  color: #000;
+  text-decoration: none;
+}
+nav .nav_menuList li a:hover {
+  color: #0020FF;
+}
+nav a {
+  color: #000;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #0020FF;
+}
+
+.section_for_whyYoureHere {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 450px;
+  background: rgb(0, 159, 255);
+  background: linear-gradient(90deg, rgb(0, 159, 255) 0%, rgb(0, 255, 223) 0%, rgb(0, 32, 255) 100%);
+}
+.section_for_whyYoureHere h1 {
+  font-family: "Inter-Tight", sans-serif;
+  font-size: 3.5em;
+}
+.section_for_whyYoureHere p {
+  font-family: "Gilda-Display", sans-serif;
+  font-size: 1.3rem;
+}
+
+.tech_icons_bar {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  border-top: 3px solid rgba(128, 128, 128, 0.212);
+  border-bottom: 3px solid rgba(128, 128, 128, 0.212);
+  background: rgb(0, 159, 255);
+  background: linear-gradient(90deg, rgba(0, 159, 255, 0.3) 7%, rgba(0, 32, 255, 0.5410539216) 30%, rgba(0, 255, 223, 0.3) 100%);
+}
+.tech_icons_bar .tech_icons {
+  width: 50px;
+  height: 40px;
+  margin-inline: 1em;
+}
+.tech_icons_bar .html-css-javascript-icons {
+  width: auto;
+  height: 50px;
+}
+
+.section_projects .heading_forProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+.section_projects .heading_forProjects h2 {
+  font-family: "Inter-Tight", sans-serif;
+}
+.section_projects .heading_forProjects p {
+  font-family: "Gilda-Display", sans-serif;
+}
+.section_projects .projects_cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.section_projects .projects_cards .card-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 250px;
+  width: 100%;
+  min-height: 320px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px 0px;
+}
+.section_projects .projects_cards .card-project .cardImage {
+  width: 100%;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 5px 5px 5px;
+}
+.section_projects .projects_cards .card-project .cardImage.hereAndNow {
+  background-image: url(../images/option2-green-landing\ page-image.jpeg);
+}
+.section_projects .projects_cards .card-project .cardImage.PinkLandingPage {
+  background-image: url(../images/option1-pink-landing-page-image.jpeg);
+}
+.section_projects .projects_cards .card-project .cardImage.coffeeLandingPage {
+  background-image: url(../images/option3-coffe-landing-page-image.jpeg);
+}
+.section_projects .projects_cards .card-project .cardImage.envelopeLandingPage {
+  background-image: url(../images/option4-blue-landing-page-image.jpeg);
+}
+.section_projects .projects_cards .card-project .cardImage.worldTour {
+  background-image: url(../images/option5-World\ Tour-Landing-Page-image.jpeg);
+}
+.section_projects .projects_cards .card-project .cardImage.outOfTheBox {
+  background-image: url(../images/option7-out-of-the-box-image-cropped.jpeg);
+}
+.section_projects .projects_cards .card-project h3 {
+  font-family: "Inter-Tight", sans-serif;
+  font-size: 1.5rem;
+}
+.section_projects .projects_cards .card-project p {
+  font-family: "Gilda-Display", sans-serif;
+  font-size: 0.9rem;
+}
+.section_projects .projects_cards .card-project .card_small_icons_technologies {
+  margin-bottom: 35px;
+}
+.section_projects .projects_cards .card-project .card_small_icons_technologies img {
+  width: 50px;
+  margin-inline: 2px;
+}
+.section_projects .projects_cards .card-project .card_small_icons_technologies img + img {
+  width: 25px;
+}
+.section_projects .projects_cards .card-project a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid #00FFDF;
+  border-radius: 15px;
+  padding: 5px;
+  padding-inline: 50px;
+}
+.section_projects .projects_cards .card-project a:hover {
+  background-color: #009FFF;
+  color: white;
+}
+
+.section-aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 350px;
+  margin-top: 5em;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: rgb(0, 159, 255);
+  background: linear-gradient(90deg, rgba(0, 159, 255, 0.7427345938) 21%, rgba(0, 32, 255, 0.5158438375) 50%, rgba(0, 255, 223, 0.7399334734) 84%);
+}
+.section-aboutMe img {
+  width: 190px;
+  border-radius: 20px;
+  margin-bottom: 2em;
+  box-shadow: -2px 4px 10px 1px;
+}
+.section-aboutMe h2 {
+  font-family: "Inter-Tight", sans-serif;
+  margin-bottom: 1em;
+}
+.section-aboutMe p {
+  font-family: "Gilda-Display", sans-serif;
+  max-width: 600px;
+  margin-bottom: 3.5em;
+}
+.section-aboutMe a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid #00FFDF;
+  border-radius: 15px;
+  padding: 5px;
+  padding-inline: 50px;
+}
+.section-aboutMe a:hover {
+  background-color: #009FFF;
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .section_contactMe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 3em;
+  margin-top: 2em;
+}
+footer .section_contactMe .heading-contact h1 {
+  font-family: "Inter-Tight", sans-serif;
+}
+footer .section_contactMe .heading-contact p {
+  font-family: "Gilda-Display", sans-serif;
+  max-width: 350px;
+}
+footer .section_contactMe form {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  width: 100%;
+}
+footer .section_contactMe form label {
+  font-family: "Gilda-Display", sans-serif;
+  font-weight: bold;
+  margin-top: 1em;
+}
+footer .section_contactMe form input[type=text],
+footer .section_contactMe form input[type=email],
+footer .section_contactMe form input[type=number] {
+  border: none;
+  border-bottom: 2px solid #00FFDF;
+  max-width: 350px;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(128, 128, 128, 0.048);
+}
+footer .section_contactMe form textarea {
+  resize: none;
+  border: none;
+  border-bottom: 2px solid #00FFDF;
+  max-width: 350px;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.048);
+}
+footer .section_contactMe form input[type=submit] {
+  font-family: "Gilda-Display", sans-serif;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: 1.5em;
+  border: 1px solid #00FFDF;
+  border-radius: 15px;
+  padding: 5px;
+  padding-inline: 50px;
+}
+footer .section_contactMe form input[type=submit]:hover {
+  background-color: #009FFF;
+  color: white;
+}
+footer .contact-image img {
+  max-width: 500px;
+  width: 100%;
+}
+
+.section_icons_contactMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.9em;
+  min-height: 100px;
+}
+.section_icons_contactMe img {
+  width: 50px;
+}
+
+.section_creditMyName p {
+  font-family: "Gilda-Display", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding-top: 15px;
+}
+
+.section_for_whyYoureHere-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+  background: rgb(0, 159, 255);
+  background: linear-gradient(90deg, rgb(0, 159, 255) 0%, rgb(0, 255, 223) 0%, rgb(0, 32, 255) 100%);
+}
+.section_for_whyYoureHere-project a {
+  font-family: "Gilda-Display", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: 1.5em;
+  border: 1px solid #00FFDF;
+  border-radius: 15px;
+  padding: 5px;
+  padding-inline: 50px;
+}
+.section_for_whyYoureHere-project a:hover {
+  background-color: #009FFF;
+  color: white;
+}
+
+.big-pic-ofProject {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  background-color: rgba(129, 236, 255, 0.137);
+}
+.big-pic-ofProject img {
+  max-width: 950px;
+  width: 100%;
+  box-shadow: 3px 2px 11px 0px;
+}
+
+@media (max-width: 1250px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .section_for_whyYoureHere {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 450px;
+    text-align: center;
+  }
+  .section_for_whyYoureHere h1 {
+    font-size: 2.5em;
+  }
+  .section_for_whyYoureHere p {
+    font-size: 1rem;
+  }
+  .tech_icons_bar .tech_icons {
+    width: 40px;
+    height: 30px;
+  }
+  .tech_icons_bar .html-css-javascript-icons {
+    width: auto;
+    height: 40px;
+  }
+  .section_projects .heading_forProjects {
+    text-align: center;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer .section_contactMe {
+    margin-left: 0;
+    margin-inline: 6px;
+  }
+  footer .section_contactMe .heading-contact {
+    text-align: center;
+  }
+  footer .section_contactMe form {
+    align-items: center;
+  }
+  footer .section_contactMe form input[type=submit] {
+    margin-bottom: 2em;
+  }
+  footer .contact-image img {
+    max-width: 300px;
+    width: 100%;
+  }
+  .section_icons_contactMe img {
+    width: 45px;
+  }
+  .section_creditMyName p {
+    text-align: center;
+  }
+  .section_for_whyYoureHere-project {
+    text-align: center;
+  }
+  .section_for_whyYoureHere-project .see-and-download {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .section_for_whyYoureHere-project .see-and-download a {
+    margin-top: 1em;
+    max-width: 241px;
+    width: 100%;
+  }
+  .section_for_whyYoureHere-project .see-and-download a:hover {
+    background-color: #009FFF;
+    color: white;
+  }
+  .big-pic-ofProject {
+    padding: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */

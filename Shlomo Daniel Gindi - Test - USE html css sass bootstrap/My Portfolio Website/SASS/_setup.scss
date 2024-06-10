@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// headers font
+@font-face {
+    font-family: "Inter-Tight";
+    src: url(../fonts/Inter_Tight-headersFont/InterTight-VariableFont_wght.ttf)
+}
+
+// text fonts
+@font-face {
+    font-family: "Gilda-Display";
+    src: url(../fonts/Gilda_Display/GildaDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Joan";
+    src: url(../fonts/Joan/Joan-Regular.ttf);
+}
+
+// variables $ $ $
+
+// fonts
+$headers-font: "Inter-Tight";
+$all-text-font: "Gilda-Display";
+// colors
+$light-color: #00FFDF;
+$medium-color: #009FFF;
+$strong-color: #0020FF;

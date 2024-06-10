@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vh and Vw</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container1 {
+            width: 100vw;
+            height: 10vh;
+            background-color: lightcoral;
+        }
+
+        .container2 {
+            width: 80vw;
+            height: 10vh;
+            background-color: lightseagreen;
+            margin: 0 auto;
+        }
+
+        @media (max-width:600px) {
+            .container2 {
+                width: 100vw;
+                height: 90vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .container$*2 -->
+    <div class="container1"></div>
+    <div class="container2"></div>
+</body>
+
+</html>

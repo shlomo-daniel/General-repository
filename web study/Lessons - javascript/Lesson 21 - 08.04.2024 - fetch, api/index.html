@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <form class="login-form" onsubmit="login(event)">
+        <h1>Login</h1>
+
+        <label>User Name:</label>
+        <input type="text" name="userName" autocomplete="username">
+
+
+        <label>Password:</label>
+        <input type="password" name="password" autocomplete="current-password">
+
+        <button>התחבר</button>
+
+    </form>
+    <!-- user logged in interface header -->
+    <header class="user-logged-header">
+        <p class="successful-in"></p>
+        <button class="logout-button" onclick="logout()">Logout</button>
+    </header>
+
+    <!-- articles container -->
+    <div class="articles-page">
+        <!-- all articles goes here by script -->
+    </div>
+
+    </div>
+
+    <div class="loader-background">
+        <div class="loader-animation"></div>
+    </div>
+
+</body>
+
+</html>

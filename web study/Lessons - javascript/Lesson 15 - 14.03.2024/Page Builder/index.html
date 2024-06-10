@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <title>בונה מסכים</title>
+    </head>
+    <body>
+        <div id="frame">
+            <div id="panelSide">
+                <h1>בונה מסך</h1>
+
+                <nav>
+                    <a class="active" onclick="pageToShow('settings', this)">עיצוב כללי</a>
+                    <a onclick="pageToShow('elements', this)">אלמנטים</a>
+                </nav>
+
+                <div id="settings">
+                    <div class="field">
+                        <label>רקע לאתר</label>
+                        <input type="color" oninput="bgChange(this)">
+                    </div>
+    
+                    <div class="field">
+                        <label>ריווח פנימי של הדף</label>
+                        <input type="number" value="16" oninput="paddingChange(this)">
+                    </div>
+                </div>
+
+                <div id="elements">
+                    <div class="field">
+                        <label>סוג אלמנט</label>
+                        <select class="elementType">
+                            <option></option>
+                            <option value="title">כותרת</option>
+                            <option value="p">פסקה</option>
+                            <option value="input">תיבת קלט</option>
+                            <option value="button">לחצן</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div id="main">
+                <div id="page" contenteditable="true"></div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,257 @@
+.container {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+// font weight
+h1,
+h2 {
+    font-family: Heebo, serif;
+    font-weight: 900;
+}
+
+p {
+    font-family: Heebo, serif;
+    font-weight: normal;
+}
+
+label {
+    font-family: Heebo, serif;
+    font-weight: bold;
+}
+
+input[type=submit] {
+    font-family: Heebo, serif;
+    font-weight: bold;
+}
+
+
+.container-outOfTheBox {
+    background-color: var(--main-color);
+
+    min-height: 634px;
+    max-width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 5em;
+
+    direction: rtl;
+
+    img {
+        max-width: 325px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 4.125rem;
+
+        color: var(--dark);
+    }
+
+    p {
+        font-size: 1.25rem;
+
+        max-width: 787px;
+    }
+}
+
+.whatsAppSticky {
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+
+    box-shadow: 2px 2px 5px 0px;
+
+    position: relative;
+    top: -201px;
+    left: -474px;
+
+    img {
+        width: 50px;
+    }
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-around;
+
+    direction: rtl;
+
+    gap: 1.4375em;
+
+    margin-top: 4.375em;
+    margin-bottom: 4.375em;
+
+    .card {
+        max-width: 450px;
+        width: 100%;
+        min-height: 329px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+
+        background-color: var(--gray-background);
+
+        img {
+            max-width: 55px;
+            width: 100%;
+
+            margin-bottom: 1.875em;
+        }
+
+        h2 {
+            color: var(--main-color);
+            font-size: 1.875rem;
+        }
+
+        p {
+            max-width: 293px;
+            font-size: 0.9375rem;
+        }
+    }
+}
+
+//bottom part of page
+.container-formAndMap {
+    display: flex;
+}
+
+
+.container-form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 50%;
+
+    background-color: var(--light-background);
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        text-align: right;
+
+        max-width: 427px;
+        // height: 614px;
+    }
+
+    h2 {
+        font-size: 2.875rem;
+
+        color: var(--dark);
+    }
+
+    p {
+        font-size: 0.9375rem;
+
+        max-width: 403px;
+        width: 100%;
+
+        margin-bottom: 2.5em;
+    }
+
+    label {
+        font-size: 0.8125rem;
+
+        color: var(--dark);
+
+        margin-top: 1.5em;
+    }
+
+    input[type=text],
+    input[type=email] {
+        max-width: 426px;
+        height: 51px;
+
+        border: none;
+        border-bottom: 4px solid var(--main-color);
+
+        background-color: var(--input-background);
+    }
+
+    textarea {
+        resize: none;
+
+        max-width: 426px;
+        height: 145px;
+
+        border: none;
+        border-bottom: 4px solid var(--main-color);
+
+        background-color: var(--input-background);
+
+        margin-bottom: 1.5em;
+    }
+
+    input[type=submit] {
+        border: none;
+
+        font-size: 1.25rem;
+
+        background-color: var(--main-color);
+
+        max-width: 427px;
+        height: 51px
+    }
+}
+
+
+// map iframe
+iframe {
+    padding: 4.625em;
+
+    background-color: var(--main-color);
+
+    box-sizing: content-box;
+}
+
+.container-icons {
+    display: flex;
+    justify-content: space-around;
+
+    padding-inline: 740px;
+
+    margin-top: 4em;
+    margin-bottom: 4em;
+
+    column-gap: 25px;
+
+    .icon-back {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: var(--main-color);
+
+        border-radius: 50%;
+
+        min-width: 80px;
+        height: 80px;
+
+
+    }
+
+    .icon {
+        width: 30px;
+    }
+}
+
+.underline {
+    height: 19px;
+    margin: 0 auto;
+
+    background-color: var(--main-color);
+}

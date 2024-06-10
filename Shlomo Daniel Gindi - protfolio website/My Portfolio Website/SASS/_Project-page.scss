@@ -1,0 +1,52 @@
+// Show and dwonload project pages----------
+.section_for_whyYoureHere-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 250px;
+
+    background: rgb(0, 159, 255);
+    background: linear-gradient(90deg, rgba(0, 159, 255, 1) 0%, rgba(0, 255, 223, 1) 0%, rgba(0, 32, 255, 1) 100%);
+
+    a {
+        font-family: $all-text-font, sans-serif;
+        font-weight: bold;
+
+        text-decoration: none;
+
+        color: white;
+
+        background-color: #ffffff00;
+
+        margin-top: 1.5em;
+
+        border: 1px solid $light-color;
+        border-radius: 15px;
+        padding: 5px;
+        padding-inline: 50px;
+    }
+
+    a:hover {
+        background-color: $medium-color;
+        color: white;
+    }
+}
+
+.big-pic-ofProject {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 100px;
+
+    background-color: rgba(129, 236, 255, 0.137);
+
+    img {
+        max-width: 950px;
+        width: 100%;
+
+        box-shadow: 3px 2px 11px 0px;
+    }
+}

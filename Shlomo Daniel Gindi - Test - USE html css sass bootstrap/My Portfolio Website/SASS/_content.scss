@@ -1,0 +1,435 @@
+// nav bar-----
+nav {
+    display: flex;
+    justify-content: space-around;
+
+    position: sticky;
+    top: 0;
+
+    background-color: $light-color;
+
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+
+    border-bottom: 4px solid rgba(128, 128, 128, 0.205);
+
+    background: rgb(0, 159, 255);
+    background: linear-gradient(90deg, rgba(0, 159, 255, 1) 0%, rgba(0, 255, 223, 1) 96%, rgba(0, 32, 255, 1) 100%);
+
+    .nav_pic_and_myName {
+        display: flex;
+        align-items: end;
+
+        .MyFace {
+            width: 50px;
+            height: auto;
+
+            border-radius: 50%;
+
+            margin-right: 2em;
+        }
+
+        p {
+            font-family: $headers-font;
+            font-size: 1.5rem;
+        }
+
+    }
+
+    .nav_menuList {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+
+        ul {
+            display: flex;
+
+        }
+
+        li {
+            font-family: $all-text-font;
+            font-size: 1.2rem;
+
+            list-style: none;
+            margin-inline: 2em;
+
+            a {
+                color: #000;
+                text-decoration: none;
+
+            }
+
+            a:hover {
+                color: $strong-color;
+            }
+
+        }
+    }
+
+    // remove color and decoration from "shlomo d' g'"
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $strong-color;
+    }
+}
+
+// hero section
+.section_for_whyYoureHere {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 450px;
+
+    background: rgb(0, 159, 255);
+    background: linear-gradient(90deg, rgba(0, 159, 255, 1) 0%, rgba(0, 255, 223, 1) 0%, rgba(0, 32, 255, 1) 100%);
+
+    h1 {
+        font-family: $headers-font, sans-serif;
+        font-size: 3.5em;
+    }
+
+    p {
+        font-family: $all-text-font, sans-serif;
+        font-size: 1.3rem;
+    }
+}
+
+// tech icons bar
+.tech_icons_bar {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+
+    border-top: 3px solid rgba(128, 128, 128, 0.212);
+    border-bottom: 3px solid rgba(128, 128, 128, 0.212);
+
+    background: rgb(0, 159, 255);
+    background: linear-gradient(90deg, rgba(0, 159, 255, 0.3) 7%, rgba(0, 32, 255, 0.5410539215686274) 30%, rgba(0, 255, 223, 0.3) 100%);
+
+    .tech_icons {
+        width: 50px;
+        height: 40px;
+
+        margin-inline: 1em;
+    }
+
+    .html-css-javascript-icons {
+        width: auto;
+        height: 50px;
+    }
+}
+
+// projects area
+.section_projects {
+    .heading_forProjects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 200px;
+
+        h2 {
+            font-family: $headers-font, sans-serif;
+        }
+
+        p {
+            font-family: $all-text-font, sans-serif;
+        }
+    }
+
+    // cards styling
+    .projects_cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        gap: 25px;
+
+        .card-project {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            text-align: center;
+
+            max-width: 250px;
+            width: 100%;
+            min-height: 320px;
+
+            border-radius: 5px;
+
+            box-shadow: 2px 2px 6px 0px;
+
+            // global for cards
+            .cardImage {
+                width: 100%;
+                height: 150px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                border-radius: 5px 5px 5px;
+            }
+
+            // hereAndNow first card
+            .cardImage.hereAndNow {
+                background-image: url(../images/option2-green-landing\ page-image.jpeg);
+            }
+
+            // pink landing page card
+            .cardImage.PinkLandingPage {
+                background-image: url(../images/option1-pink-landing-page-image.jpeg);
+            }
+
+            // coffee landing page card
+            .cardImage.coffeeLandingPage {
+                background-image: url(../images/option3-coffe-landing-page-image.jpeg);
+            }
+
+            // envelope landing page card
+            .cardImage.envelopeLandingPage {
+                background-image: url(../images/option4-blue-landing-page-image.jpeg);
+            }
+
+            // World tour card
+            .cardImage.worldTour {
+                background-image: url(../images/option5-World\ Tour-Landing-Page-image.jpeg);
+            }
+
+            // out of the box card
+            .cardImage.outOfTheBox {
+                background-image: url(../images/option7-out-of-the-box-image-cropped.jpeg);
+            }
+
+            h3 {
+                font-family: $headers-font, sans-serif;
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-family: $all-text-font, sans-serif;
+                font-size: 0.9rem;
+            }
+
+            .card_small_icons_technologies {
+
+                margin-bottom: 35px;
+
+                img {
+                    width: 50px;
+                    margin-inline: 2px;
+                }
+
+                // this sass logo need differnt size
+                img+img {
+                    width: 25px;
+                }
+            }
+
+            a {
+                text-decoration: none;
+
+                color: black;
+
+                border: 1px solid $light-color;
+                border-radius: 15px;
+                padding: 5px;
+                padding-inline: 50px;
+            }
+
+            a:hover {
+                background-color: $medium-color;
+                color: white;
+            }
+        }
+    }
+}
+
+// about me section
+.section-aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    min-height: 350px;
+
+    margin-top: 5em;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    background: rgb(0, 159, 255);
+    background: linear-gradient(90deg, rgba(0, 159, 255, 0.742734593837535) 21%, rgba(0, 32, 255, 0.5158438375350141) 50%, rgba(0, 255, 223, 0.7399334733893557) 84%);
+
+
+    img {
+        width: 190px;
+
+        border-radius: 20px;
+
+        margin-bottom: 2em;
+
+        box-shadow: -2px 4px 10px 1px;
+    }
+
+    h2 {
+        font-family: $headers-font, sans-serif;
+
+        margin-bottom: 1em;
+    }
+
+    p {
+        font-family: $all-text-font, sans-serif;
+        max-width: 600px;
+
+        margin-bottom: 3.5em;
+    }
+
+    a {
+        text-decoration: none;
+
+        color: black;
+
+        border: 1px solid $light-color;
+        border-radius: 15px;
+        padding: 5px;
+        padding-inline: 50px;
+    }
+
+    a:hover {
+        background-color: $medium-color;
+        color: white;
+    }
+}
+
+// contact me section
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    .section_contactMe {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin-left: 3em;
+        margin-top: 2em;
+
+        .heading-contact {
+            h1 {
+                font-family: $headers-font, sans-serif;
+            }
+
+            p {
+                font-family: $all-text-font, sans-serif;
+
+                max-width: 350px;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            max-width: 350px;
+            width: 100%;
+
+            label {
+                font-family: $all-text-font, sans-serif;
+                font-weight: bold;
+
+                margin-top: 1em;
+            }
+
+
+            input[type=text],
+            input[type=email],
+            input[type=number] {
+                border: none;
+                border-bottom: 2px solid$light-color;
+
+                max-width: 350px;
+                width: 100%;
+                height: 40px;
+
+                background-color: rgba(128, 128, 128, 0.048);
+            }
+
+            textarea {
+                resize: none;
+                border: none;
+                border-bottom: 2px solid$light-color;
+
+                max-width: 350px;
+                width: 100%;
+
+                background-color: rgba(128, 128, 128, 0.048);
+            }
+
+            input[type=submit] {
+                font-family: $all-text-font, sans-serif;
+                font-weight: bold;
+
+                background-color: #ffffff00;
+
+                margin-top: 1.5em;
+
+                border: 1px solid $light-color;
+                border-radius: 15px;
+                padding: 5px;
+                padding-inline: 50px;
+            }
+
+            input[type=submit]:hover {
+                background-color: $medium-color;
+                color: white;
+            }
+        }
+    }
+
+    .contact-image {
+
+        img {
+            max-width: 500px;
+            width: 100%;
+        }
+    }
+}
+
+.section_icons_contactMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1.9em;
+
+    min-height: 100px;
+
+    img {
+        width: 50px;
+    }
+
+}
+
+// credit
+.section_creditMyName {
+    p {
+        font-family: $all-text-font, sans-serif;
+        font-weight: bold;
+        font-size: 0.9rem;
+
+        padding-top: 15px;
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js functions</title>
+    <script>
+
+console.log('demo01********')
+
+// 
+function sayhi(){
+    console.log('nada shelano!!!')
+}
+
+// 
+function go_wild(){
+    var Trails = prompt('what is the best game ever?')
+console.log('Trails Of Cold Steel IV')
+var Favchara = prompt('your fav character?')
+console.log(Favchara)
+}
+
+function sayHi(){
+    console.log('demo3*******');
+    var fName = prompt('give first name')
+    var lName = prompt('give yor last name')
+    alert(fName + " " + lName)
+}
+   
+//    add numbers function
+function plus(){
+    var price1 = prompt('enter price 01')
+    var price2 = prompt("enter price 02")
+    price1 = Number(price1)
+    price2 = Number(price2)
+    var total = price1 + price2;
+    console.log(total)
+    alert(total)
+                                 
+}
+   
+//    prices
+function prices(){
+    console.log("demo*******5")
+    var price1 = prompt('enter price 1')
+    var price2 = prompt('enter price 2')
+    var price3 = prompt('enter price 3');
+    var price4 = prompt('enter price 4');
+    price1 = Number(price1)
+    price2 = Number(price2)
+    price3 = Number(price3)
+    price4 = Number(price4)
+    var total = price1 + price2 + price3 + price4
+    alert(total)
+}
+   
+   </script>
+</head>
+<body>
+    <h1>js wooooow!!!</h1>
+    <button onClick="sayhi()">click here!</button>
+
+<h1 style="color: black;">the best game?</h1>
+    <button onClick="go_wild()">what is the greatest game ever?</button>
+
+    <button onclick="sayHi()" style="background-color: bisque;">print name</button>
+
+<h2>plus this</h2>
+<button onclick="plus()">plus now!!!</button>
+
+<br>
+
+<button onclick="prices()">price add</button>
+</body>
+</html>

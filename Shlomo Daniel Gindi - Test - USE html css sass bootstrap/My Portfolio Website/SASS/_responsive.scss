@@ -1,0 +1,127 @@
+@media(max-width: 1250px) {
+
+    // nav bar-----
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+
+        ul {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+
+    // hero section
+    .section_for_whyYoureHere {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 450px;
+
+        text-align: center;
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    // tech icons bar
+    .tech_icons_bar {
+        .tech_icons {
+            width: 40px;
+            height: 30px;
+        }
+
+        .html-css-javascript-icons {
+            width: auto;
+            height: 40px;
+        }
+    }
+
+    // projects area
+    .section_projects {
+        .heading_forProjects {
+            text-align: center;
+        }
+    }
+
+    // contact me section
+    footer {
+        flex-direction: column;
+
+        .section_contactMe {
+
+            margin-left: 0;
+            margin-inline: 6px;
+
+            .heading-contact {
+                text-align: center;
+            }
+
+            form {
+                align-items: center;
+
+                input[type=submit] {
+                    margin-bottom: 2em;
+                }
+            }
+        }
+
+        .contact-image {
+
+            img {
+                max-width: 300px;
+                width: 100%;
+            }
+        }
+    }
+
+    .section_icons_contactMe {
+        img {
+            width: 45px;
+        }
+    }
+
+    // credit
+    .section_creditMyName {
+        p {
+            text-align: center;
+        }
+    }
+
+    // projects pages---------------
+    // Show and dwonload project pages----------
+    .section_for_whyYoureHere-project {
+        text-align: center;
+
+        .see-and-download {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            a {
+                margin-top: 1em;
+
+                max-width: 241px;
+                width: 100%;
+            }
+
+
+            a:hover {
+                background-color: $medium-color;
+                color: white;
+            }
+        }
+    }
+
+    .big-pic-ofProject {
+        padding: 20px;
+    }
+}

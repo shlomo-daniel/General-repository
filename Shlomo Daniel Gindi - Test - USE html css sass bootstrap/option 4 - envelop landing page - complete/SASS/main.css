@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Assistant;
+  src: url(./fonts/Assistant-VariableFont_wght.ttf);
+}
+.heading-container {
+  background-image: url(../images/background2.jpg);
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body {
+  font-family: Assistant;
+  padding-bottom: 100px;
+}
+
+.heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  color: #D3E10E;
+  font-size: 5.375rem;
+  padding-bottom: 0.2em;
+}
+
+p {
+  font-size: 1.25rem;
+  color: white;
+}
+
+.form-container {
+  direction: rtl;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1.8em;
+  margin-top: 4em;
+}
+
+label {
+  font-family: "Assistant";
+  font-weight: bold;
+  font-size: 1rem;
+  color: #011560;
+}
+
+.full-name-div,
+.email-div {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=text],
+input[type=email] {
+  background-color: #F6F6F6;
+  width: 418px;
+  height: 50px;
+  border: none;
+  border-bottom: 3px solid #D3E10E;
+}
+
+input[type=submit] {
+  font-family: Assistant;
+  font-weight: bold;
+  font-size: 1.375rem;
+  width: 166px;
+  height: 50px;
+  border: none;
+  background-color: #D3E10E;
+  margin-right: 3em;
+}
+
+@media (max-width: 1200px) {
+  .heading-container {
+    height: 85vh;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h1 + p {
+    font-size: 1rem;
+  }
+  .form-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  label {
+    font-size: 0.625rem;
+  }
+  input[type=text],
+  input[type=email] {
+    max-width: 418px;
+  }
+  input[type=submit] {
+    width: 418px;
+    margin: 0;
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 655px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  h1 + p {
+    font-size: 0.9rem;
+  }
+  p {
+    max-width: 330px;
+  }
+  form {
+    margin-inline: 50px;
+  }
+  input[type=text],
+  input[type=email] {
+    max-width: 270px;
+  }
+  input[type=submit] {
+    max-width: 270px;
+  }
+}/*# sourceMappingURL=main.css.map */

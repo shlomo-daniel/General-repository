@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>what if else?</title>
+
+    <script>
+      console.log("demo ifs*****");
+
+      function login1() {
+        console.log("ifs demo********");
+        var password = prompt("enter password");
+        if (password == "sss111") {
+          console.log("welcome");
+          alert("welcome");
+        }
+      }
+
+      function game() {
+        var answer = prompt("what is the best game?");
+        console.log(answer);
+        if (answer == "trails 4") {
+          alert("yessss!!!");
+        } else {
+          console.log("no no no");
+          alert("no no no!");
+        }
+      }
+
+      function getPantsSize() {
+        console.log("demo pants******");
+        var pantsSize = prompt("enter pants size");
+        pantsSize = Number(pantsSize);
+        console.log(pantsSize);
+        if (pantsSize >= 24 && pantsSize <= 30) {
+          alert("your size is small");
+        } else if (pantsSize >= 31 && pantsSize <= 36) {
+          alert("your medium size");
+        } else if (pantsSize > 36 && pantsSize <= 38) {
+          alert("your size is large");
+        } else {
+          alert("no size for you!");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1 style="color: blueviolet">what if else?</h1>
+    <button onclick="login1()">login now!</button>
+
+    <button onclick="game()">game is?</button>
+
+    <button onclick="getPantsSize()">pants size now</button>
+  </body>
+</html>

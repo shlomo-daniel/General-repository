@@ -1,0 +1,22 @@
+// reset
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// fonts
+@font-face {
+    font-family: Assistant;
+    src: url(../fonts/Assistant-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Assistant_regular;
+    src: url(../fonts/Assistant_static_fonts/Assistant-Regular.ttf);
+}
+
+@font-face {
+    font-family: Heebo-Bold;
+    src: url(../fonts/Heebo-Bold.ttf);
+}

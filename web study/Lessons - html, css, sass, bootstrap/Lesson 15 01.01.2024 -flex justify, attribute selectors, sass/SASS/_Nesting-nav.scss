@@ -1,0 +1,22 @@
+nav {
+    width: 960px;
+    height: 60px;
+    background-color: yellow;
+    margin: 0 auto;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            display: block;
+            padding: 20px;
+            font-size: 1.3rem;
+            text-align: center;
+            text-decoration: none;
+            color: purple;
+            font-weight: bold;
+        }
+    }
+}

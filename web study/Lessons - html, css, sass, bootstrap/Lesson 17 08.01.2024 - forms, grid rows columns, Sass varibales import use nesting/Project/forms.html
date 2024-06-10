@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form {
+            display: flex;
+        }
+
+        label {
+            display: block;
+            font-size: 1.3rem;
+            color: blue;
+        }
+
+        textarea {
+            resize: none;
+            width: 400px;
+            height: 200px;
+            display: block;
+        }
+
+        input[type=submit] {
+            width: 200px;
+            padding: 20px;
+            background-color: lightskyblue;
+            font-size: 1.2rem;
+            border-radius: 8px;
+        }
+
+        @media (max-width:650px) {
+            form {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form action="server-side-program" method="post">
+        <div>
+            <label for="First Name">First Name</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="Last Name">Last Name</label>
+            <input type="text"><br>
+        </div>
+        <label for="problem">Problem Info</label>
+        <textarea name="" id="problem" maxlength="10"></textarea>
+
+        <!-- checkbox -->
+        <div>
+            <label for="">hobbies</label>
+            <input type="checkbox" name="" id="">music
+            <input type="checkbox" name="" id="">books
+            <input type="checkbox" name="" id="">sport
+        </div>
+        <!-- radio -->
+        <div>
+            <label for="">gender</label>
+            <input type="radio" name="gender" id="">male
+            <input type="radio" name="gender" id="">femaile
+            <input type="radio" name="gender" id="">undifained
+        </div>
+        <!-- select -->
+        <div>
+            <label for="">What Did I do?</label>
+            <select name="" id="">
+                <option value="">tel aviv</option>
+                <option value="">rammat gan</option>
+                <option value="">jeruselem</option>
+                <option value="">yahod</option>
+                <option value="">ashdod</option>
+            </select>
+        </div>
+        <div>
+            html5 tags:
+            <label for="">Email</label>
+            <input type="email" name="" id="" required>
+            <label for="">number</label>
+            <input type="number" name="" id="" max="1000" min="5" step="100">
+            <label for="">date</label>
+            <input type="date" name="" id="" required>
+            <label for="">color</label>
+            <input type="color" name="" id="" required>
+        </div>
+        <input type="submit" value="Send">
+    </form>
+</body>
+
+</html>

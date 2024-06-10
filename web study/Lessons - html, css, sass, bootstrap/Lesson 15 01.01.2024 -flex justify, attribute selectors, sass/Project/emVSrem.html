@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em Vs. rem</title>
+    <style>
+        section {
+            width: 600px;
+            border: 1px solid #000;
+            background-color: #acacac;
+            padding: 20px;
+            font-size: 120%;
+        }
+
+        section p {
+            text-align: justify;
+            line-height: 1.5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .em {
+            font-size: 1em;
+        }
+
+        .rem {
+            font-size: 1rem;
+        }
+
+        @media(max-width:650px) {
+            section {
+                font-size: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- section>p.em>lorem100+p.rem>lorem100 -->
+    <section>
+        <p class="em">EM
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sunt tempora facilis nesciunt excepturi
+            delectus doloremque, enim totam necessitatibus, debitis error aut. Corrupti sed velit facilis totam possimus
+            incidunt quos quidem! Corporis, numquam placeat! Atque, maxime ullam cupiditate cum laudantium quis eligendi
+            voluptatibus aperiam. Ex non tempora harum fugit corporis, exercitationem quod facilis dignissimos nisi
+            nesciunt a consequatur repellat velit necessitatibus quasi unde blanditiis labore amet, pariatur suscipit
+            accusamus quibusdam impedit ipsam. Quisquam necessitatibus aspernatur delectus fugiat quam temporibus
+            architecto non veniam consectetur optio sint in, omnis totam tempore natus? Recusandae perspiciatis
+            reprehenderit aperiam! Aspernatur quis atque aut at veritatis!
+        <p class="rem">REM
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, officia magnam. Consectetur
+            molestias quibusdam accusamus nemo earum cupiditate rerum tenetur velit recusandae iusto est incidunt beatae
+            laudantium eaque, tempora ea eum temporibus ad laboriosam blanditiis! Perferendis aperiam perspiciatis
+            accusamus architecto, repellat autem! Harum aspernatur nostrum nemo ad quo possimus corrupti illum quaerat
+            esse impedit doloremque, nihil veritatis, minima hic! Cum ipsum deserunt amet dolor voluptate beatae
+            blanditiis, a voluptatibus eaque. Laborum et sit ipsa incidunt reiciendis, quis impedit labore architecto
+            iusto. Voluptatibus impedit soluta optio eveniet incidunt explicabo quo quasi repellat, a temporibus, libero
+            tempore voluptates eius blanditiis non aspernatur.</p>
+        </p>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+// background
+.heading-container {
+    background-image: url(../images/background2.jpg);
+
+    // width: 100vw;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+// Font
+body {
+    font-family: Assistant;
+    padding-bottom: 100px;
+}
+
+// heading section----------------
+.heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+// main header
+h1 {
+    color: #D3E10E;
+    font-size: 5.375rem;
+
+    padding-bottom: 0.2em;
+}
+
+// main paragraph
+p {
+    font-size: 1.25rem;
+    color: white;
+
+}
+
+// form section--------------------
+
+.form-container {
+    direction: rtl;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1.8em;
+
+    margin-top: 4em;
+
+}
+
+label {
+    font-family: "Assistant";
+    font-weight: bold;
+    font-size: 1rem;
+    color: #011560;
+
+}
+
+// put label on input
+.full-name-div,
+.email-div {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text],
+input[type=email] {
+    background-color: #F6F6F6;
+
+    width: 418px;
+    // max-width: 418px;
+    height: 50px;
+
+    border: none;
+    border-bottom: 3px solid #D3E10E;
+}
+
+input[type=submit] {
+    font-family: Assistant;
+    font-weight: bold;
+    font-size: 1.375rem;
+
+    width: 166px;
+    height: 50px;
+
+    border: none;
+    background-color: #D3E10E;
+
+    margin-right: 3em;
+}

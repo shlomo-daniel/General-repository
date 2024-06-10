@@ -1,0 +1,119 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* background */
+body {
+    background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+    /* page size! */
+    width: 100vw;
+    height: 100vh;
+    /* pos content at the center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    /* size */
+    width: 50vw;
+    /* pos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+
+h1 {
+    /* look */
+    font-family: Satisfy,
+        Regular;
+    font-weight: 400;
+    font-size: 6.4rem;
+    text-shadow: 0px 0px 36px #00000087;
+    color: white;
+}
+
+/* h2 font size and weight */
+h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+/* font for all but the h1 */
+h2,
+p,
+form,
+input[value^=יש] {
+    font-family: "Varela Round";
+    color: white;
+}
+
+p {
+    font-size: 0.9rem;
+    margin-bottom: 45px;
+}
+
+/* size of input boxes */
+input[type=text],
+input[type=email] {
+    width: 310px;
+    height: 36px;
+
+    background-color: #F6F6F624;
+    border: 2px solid white
+}
+
+
+.inputLine {
+    /* pos */
+    display: flex;
+    gap: 20px;
+    text-align: right;
+    justify-content: center;
+    align-items: flex-end;
+    /* look */
+    font-size: 0.7rem;
+}
+
+/* botton */
+input[value^=יש] {
+    /* look */
+    color: black;
+    width: 140px;
+    height: 37px;
+    background-color: white;
+    border: none;
+    color: blue;
+
+}
+
+/* responsive - phone */
+@media (max-width:830px) {
+    .container {
+        width: 95vw;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    .inputLine {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[value^=יש] {
+        width: 310px;
+
+    }
+}

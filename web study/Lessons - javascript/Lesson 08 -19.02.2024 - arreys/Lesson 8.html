@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="numbers.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>lesson 8</title>
+</head>
+
+<body>
+    <h1>Lesson 8 - Array</h1>
+
+    <div class="frame">
+        <div id="numbers"></div>
+
+        <div class="task">
+            <button onclick="max()">מספר גדול</button>
+            <button onclick="min()">מספר קטן</button>
+            <button onclick="sum()">סכום</button>
+            <button onclick="count()">כמות מספרים</button>
+            <button onclick="avg()">ממוצע</button>
+            <button onclick="sortAsc()">מיון בסדר עולה</button>
+            <button onclick="sortDesc()">מיון בסדר יורד</button>
+            <button onclick="removeStart()">הסרה מההתחלה</button>
+            <button onclick="removeEnd()">הסרה מהסוף</button>
+            <button onclick="lines()">שורות נפרדות</button>
+            <button onclick="inline()">בשורה אחת</button>
+            <button onclick="addRandomToStart()">הוספת מספר רנדומלי להתחלה</button>
+            <button onclick="addRandomToEnd()">הוספת מספר רנדומלי לסוף</button>
+        </div>
+
+        <p id="output"></p>
+
+        <div class="task">
+            <h2>אפשרות להוספת מספר</h2>
+            <input type="Number" id="addNumber">
+            <button onclick="addByUserStart()">להתחלה</button>
+            <button onclick="addByUserEnd()">לסוף</button>
+        </div>
+
+        <div class="task">
+            <h2>אפשרות להסיר מספר לפי מיקום (יש להגדיר מינימום ומקסימום מהקוד)</h2>
+            <input type="number" min="1" id="inputToRemove">
+            <button onclick="removeByUserInput()">הסר</button>
+        </div>
+
+        <div class="task">
+            <h2>אפשרות להסיר מספר לפי הקלט</h2>
+            <input type="number">
+            <button>הסר</button>
+        </div>
+    </div>
+</body>
+
+</html>

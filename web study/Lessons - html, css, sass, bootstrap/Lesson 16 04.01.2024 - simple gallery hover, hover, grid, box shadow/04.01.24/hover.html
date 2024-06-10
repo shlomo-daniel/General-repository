@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        .boom {
+            color: red;
+            font-size: 2rem;
+        }
+
+        .boom:hover {
+            color: magenta;
+        }
+
+        nav ul li ul {
+            display: none;
+        }
+
+        /* Father & child */
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        /*  */
+        h1+p {
+            display: none;
+        }
+
+        /* Brothers */
+        h1:hover+p {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" class="boom">BOOM</a>
+    <nav>
+        <ul>
+            <li>BOOM
+                <ul>
+                    <li>BOOM IN</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <h1>Heading</h1>
+    <p>Phara</p>
+    <h1>Heading</h1>
+    <p>Phara</p>
+    <h1>Heading</h1>
+    <p>Phara</p>
+</body>
+
+</html>

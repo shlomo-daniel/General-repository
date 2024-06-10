@@ -1,0 +1,87 @@
+// laptop and down
+@media (max-width:1024px) {
+    .container {
+        width: min-content;
+    }
+
+    .container-grid {
+        gap: 0.75em;
+        grid-auto-columns: 1fr;
+
+        grid-template-areas:
+            " discover_area discover_area"
+            " discover_area discover_area"
+            "trees-on-waters two-persons"
+            "beach cow"
+            "sun-set palm-trees"
+            "far-tree surfers"
+            "form_area form_area"
+            "form_area form_area"
+            "form_area form_area"
+            "monkey sleeping-man"
+            "fields train"
+            "round-building little-boat";
+    }
+
+    img {
+        max-width: 159px;
+    }
+
+    .discover-area {
+        max-width: 370px;
+        min-height: 340px;
+
+        text-align: center;
+    }
+
+    .discover-area h1 {
+        font-size: 2.25rem;
+    }
+
+    .discover-area p {
+        font-size: 1.25rem;
+    }
+
+    // form-area-----------
+    form {
+        max-width: 278px;
+    }
+
+    .form-area-heading {
+        text-align: center;
+
+        margin-top: 4em;
+        margin-bottom: 2em;
+
+        line-height: 1.8;
+
+        max-width: 278px;
+    }
+
+    .form-area h2 {
+        font-size: 1.5625rem;
+    }
+
+    .form-area p {
+        font-size: 0.9375rem;
+    }
+
+    .form-area input {
+        width: 100%;
+        height: 33px;
+
+        border: none;
+        border-bottom: 3px solid #0EE1DA;
+    }
+
+    textarea {
+        max-width: 278px;
+    }
+
+    .form-area input[type=submit] {
+        font-size: 0.75rem;
+
+        margin-top: 0.8em;
+        margin-bottom: 5em;
+    }
+}

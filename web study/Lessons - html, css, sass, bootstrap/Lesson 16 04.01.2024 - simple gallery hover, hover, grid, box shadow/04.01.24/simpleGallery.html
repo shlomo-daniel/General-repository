@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Gallery</title>
+    <style>
+        img[src^=th] {
+            width: 200px;
+            display: block;
+            margin-bottom: 20px;
+            border: 1px solid #000;
+        }
+
+        img[src^=big] {
+            width: 800px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            display: none;
+        }
+
+        img[src^=th]:hover+img[src^=big] {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="thCar.jpeg" alt="Car">
+    <img src="bigCar.jpg" alt="Car">
+    <img src="thCoffee.jpg" alt="Coffee">
+    <img src="bigCoffee.jpg" alt="Coffee">
+    <img src="thFlower.jpg" alt="Flower">
+    <img src="bigFlower.jpg" alt="Flower">
+    <img src="thTree.jpeg" alt="Tree">
+    <img src="bigTree.jpg" alt="Tree">
+</body>
+
+</html>

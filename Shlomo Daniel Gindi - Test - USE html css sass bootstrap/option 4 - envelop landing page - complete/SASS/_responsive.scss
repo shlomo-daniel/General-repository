@@ -1,0 +1,69 @@
+// responsive --------------------------
+
+
+// tablet or laptop
+@media (max-width: 1200px) {
+
+    .heading-container {
+        height: 85vh;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h1+p {
+        font-size: 1rem;
+    }
+
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    label {
+        font-size: 0.625rem;
+    }
+
+    input[type=text],
+    input[type=email] {
+        max-width: 418px;
+    }
+
+    input[type=submit] {
+        width: 418px;
+        margin: 0;
+
+        font-size: 0.875rem;
+    }
+}
+
+// mobile  max of 655px
+@media (max-width:655px) {
+    h1 {
+        // font-size: 1.875rem;
+        font-size: 2.2rem;
+    }
+
+    h1+p {
+        font-size: 0.9rem;
+    }
+
+    p {
+        max-width: 330px;
+    }
+
+    form {
+        margin-inline: 50px;
+    }
+
+    input[type=text],
+    input[type=email] {
+        max-width: 270px;
+    }
+
+    input[type=submit] {
+        max-width: 270px;
+    }
+
+}

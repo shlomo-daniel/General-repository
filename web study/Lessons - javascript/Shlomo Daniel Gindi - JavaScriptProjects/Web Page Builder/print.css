@@ -1,0 +1,20 @@
+@media print {
+
+    #panelSide {
+        display: none;
+    }
+
+    #outputMain {
+        width: 100vw;
+        margin: 0 auto;
+    }
+
+    div#page.print {
+        display: block;
+        margin: 0 auto;
+
+        width: max-content;
+        width: 100%;
+    }
+
+}

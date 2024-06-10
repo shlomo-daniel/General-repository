@@ -1,0 +1,168 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* fonts import */
+@font-face {
+    font-family: Heebo-Bold;
+    src: url(./fonts/Heebo-Bold.ttf);
+}
+
+@font-face {
+    font-family: Heebo-Regular;
+    src: url(./fonts/Heebo-Regular.ttf);
+}
+
+/* content------------------------------------ */
+
+/* background */
+.background {
+    width: 100vw;
+    height: 60vh;
+
+    object-fit: cover;
+}
+
+/* background_mobile */
+.background_mobile {
+    display: none;
+}
+
+main {
+    background-color: #1A1A1AD4;
+    color: white;
+
+    width: 650px;
+    padding: 5em;
+
+    /* pos */
+    position: absolute;
+    right: 11vw;
+    top: 31vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+
+    justify-content: flex-start;
+    text-align: right;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-family: Heebo-Bold;
+    font-size: 3rem;
+}
+
+h1+p {
+    font-family: Heebo-Regular;
+    font-size: 1.5rem;
+
+    margin-top: 0.7rem;
+}
+
+form {
+    font-family: Heebo-Bold;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+
+/* margin between the input fields */
+.email {
+    margin-top: 23px;
+}
+
+/* name input and email */
+input[type=text],
+input[type=email] {
+    /* look */
+    border: 1px solid #D31C75;
+
+    height: 50px;
+    width: 100%;
+}
+
+/* submit button */
+input[type=submit] {
+    /* look */
+    background-color: #D31C75;
+    font-family: Heebo-Bold;
+    border: none;
+    color: white;
+    font-size: 1.375rem;
+    padding: 10px 70px;
+    /* pos */
+    margin-top: 35px;
+}
+
+/* responsive ------------------------*/
+
+/* laptop */
+@media (max-width: 769px) {
+
+    /* background */
+    .background {
+        display: none;
+    }
+
+    /* show background mobile */
+    .background_mobile {
+        display: block;
+        max-width: 100%;
+    }
+
+    main {
+        /* postion at center */
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 10vh;
+
+        margin: 0 auto;
+
+        width: 270px;
+        padding: 2em;
+
+    }
+
+    h1 {
+        font-family: Heebo-Bold;
+        font-size: 1.5625rem;
+        text-align: center;
+    }
+
+    h1+p {
+        font-family: Heebo-Regular;
+        font-size: 0.9375rem;
+        text-align: center;
+    }
+
+    form {
+        font-size: 0.7rem;
+
+    }
+
+    label {
+        font-size: 1.3125rem;
+    }
+
+    input[type=text],
+    input[type=email] {
+        /* look */
+        border: 1px solid #D31C75;
+
+        height: 28px;
+        width: 100%;
+    }
+
+    input[value=שליחה] {
+        font-size: 0.9375rem;
+
+        padding: 10px 15px;
+    }
+}

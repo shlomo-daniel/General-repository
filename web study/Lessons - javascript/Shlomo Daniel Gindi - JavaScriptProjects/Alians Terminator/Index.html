@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <script src="Script.js" defer></script>
+    <title>Alians Terminator</title>
+</head>
+
+<body onload="createBoard()">
+
+    <div class="container">
+
+        <h1>Alians Terminator</h1>
+
+        <div id="board"></div>
+
+
+    </div>
+
+    <div id="buttons-section">
+        <!-- start button -->
+        <button id="start-button" class="buttons" onclick="startGame()">start</button>
+        <!-- restart button -->
+        <button id="restart" class="buttons" onclick="restart('clicRestart')">Restart</button>
+    </div>
+
+    <!-- score -->
+    <div class="score-elem">Score:</div>
+</body>
+
+</html>

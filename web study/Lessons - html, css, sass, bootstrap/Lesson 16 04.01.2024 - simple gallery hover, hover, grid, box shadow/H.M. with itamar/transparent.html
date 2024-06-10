@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent</title>
+    <style>
+        .box,
+        .box2 {
+            position: relative;
+            width: 70vw;
+            height: 500px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        .box::before {
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.6;
+            background-image: url(bigCoffee.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+            background-size: cover;
+        }
+
+        .box {
+            position: relative;
+        }
+
+        ul li::after {
+            content: '$';
+            color: green;
+        }
+
+        .box2 {
+            opacity: 0.6;
+            background-image: url(bigCoffee.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>
+            helloooo
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vero minima tempora explicabo minus illo,
+            quaerat quasi necessitatibus placeat sed omnis temporibus suscipit voluptatibus commodi nobis consequatur
+            aperiam vitae sit. Deserunt sequi distinctio totam corrupti cum perferendis numquam sed fugiat.</p>
+    </div>
+
+    <ul>
+        <li>001</li>
+        <li>002</li>
+        <li>003</li>
+        <li>004</li>
+        <li>005</li>
+    </ul>
+
+    <div class="box2">
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vero minima tempora explicabo minus illo,
+            quaerat quasi necessitatibus placeat sed omnis temporibus suscipit voluptatibus commodi nobis consequatur
+            aperiam vitae sit. Deserunt sequi distinctio totam corrupti cum perferendis numquam sed fugiat.</p>
+    </div>
+</body>
+
+</html>

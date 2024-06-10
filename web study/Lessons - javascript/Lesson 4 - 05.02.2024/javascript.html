@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>lesson 4</title>
+</head>
+
+<body>
+
+
+    <div class="frame">
+
+        <div class="task">
+
+            <h1>minus and plus</h1>
+
+            <button onclick="plus()">+</button>
+            <span id="count">0</span>
+            <button onclick="minus()">-</button>
+
+        </div>
+
+        <div class="task">
+            <h2> the best city</h2>
+            <select name="city" id="city" oninput="cityChange()">
+                <option disabled selected>choose..</option>
+                <option>netanya</option>
+                <option>kryat hiim</option>
+                <option>hifa</option>
+                <option>bait hilel</option>
+                <option>netivot</option>
+                <option>kfar chabad</option>
+                <option>megadim</option>
+                <option>nudiin</option>
+                <option>jerusalem</option>
+                <option>telaviv</option>
+                <option>ashdod</option>
+            </select>
+
+            <span id="output1"></span>
+        </div>
+
+        <div class="task">
+
+            <h1>take a name and a password (shlomo) (woo100) with a massage to fit</h1>
+
+            <input type="text" id="name" placeholder="full name">
+            <input type="password" id="password" placeholder="password">
+
+            <button onclick="enter()">Enter</button>
+            <span id="alert"></span>
+
+        </div>
+
+        <div class="task">
+            <h2>
+                יש לקלוט מספר:
+                <ul>
+                    <li>אם הוא קטן מ-40 (כולל) - לצבוע את תיבת הקלט באדום</li>
+                    <li>אם הוא בין 41 ל-60 (כולל) - לצבוע את תיבת הקלט בכתום</li>
+                    <li>אם הוא בין 61 ל-80 (כולל) - לצבוע את תיבת הקלט בכחול</li>
+                    <li>אם הוא בין 81 ל-100 (כולל) - לצבוע את תיבת הקלט בירוק</li>
+                </ul>
+            </h2>
+
+            <input type="number" name="" id="number" oninput="numColors()">
+
+            <p id="numColor"></p>
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>

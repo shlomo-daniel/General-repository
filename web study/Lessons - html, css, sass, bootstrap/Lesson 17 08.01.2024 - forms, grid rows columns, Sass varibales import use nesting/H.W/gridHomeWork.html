@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Home Work</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 15px;
+            align-content: center;
+        }
+
+        header {
+            background-color: red;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        div {
+            background-color: blue;
+        }
+
+        .box1 {
+            grid-column-start: 1;
+        }
+
+        /* .box2 {}
+
+        .box3 {} */
+
+        aside {
+            background-color: orange;
+            grid-row: 2/5;
+            grid-column-start: 4;
+        }
+
+        main {
+            background-color: green;
+            height: 200px;
+            grid-column: 1/4;
+            grid-row: 3/5;
+
+        }
+
+        footer {
+            background-color: gray;
+            width: 100vw;
+            grid-row: 5;
+            grid-column: 1/5;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>header</p>
+    </header>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <aside>just an ad
+    </aside>
+    <main>main content</main>
+    <footer>footer</footer>
+</body>
+
+</html>

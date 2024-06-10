@@ -1,0 +1,25 @@
+// reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Rubik+Doodle+Shadow&display=swap');
+
+@font-face {
+    font-family: GlacialIndifference-Regular;
+    src: local("GlacialIndifference-Regular");
+}
+
+@font-face {
+    font-family: GlacialIndifference-Italic;
+    src: local("GlacialIndifference-Italic");
+}
+
+@font-face {
+    font-family: GlacialIndifference-Bold;
+    src: local("GlacialIndifference-Bold");
+}

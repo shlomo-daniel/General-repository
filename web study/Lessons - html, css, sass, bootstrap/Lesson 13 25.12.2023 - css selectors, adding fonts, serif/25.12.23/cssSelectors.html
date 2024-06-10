@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectros</title>
+    <style>
+        div>h1 {
+            font-size: 35pt;
+            color: tomato;
+        }
+
+        h1~p {
+            color: hotpink;
+            font-size: 16pt;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header>p{Content}+h1{content}+p{Content}+h1{content} -->
+    <div>
+        <h1>content MMM</h1>
+        <header>
+            <p>Content</p>
+            <h1>content NNNN</h1>
+            <p>Content OOO</p>
+            <p>Content OOO</p>
+            <p>Content OOO</p>
+            <p>Content OOO</p>
+            <h1>content NNNN</h1>
+        </header>
+        <p>Content</p>
+        <h1>content MMM</h1>
+        <p>Content OOO</p>
+        <p>Content OOO</p>
+        <p>Content OOO</p>
+        <p>Content OOO</p>
+        <h1>content MMM</h1>
+    </div>
+</body>
+
+</html>

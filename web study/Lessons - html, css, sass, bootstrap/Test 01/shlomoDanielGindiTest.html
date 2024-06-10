@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shlomo Daniel - Test</title>
+    <script>
+      console.log("*****start test*****");
+      //here we start! GOOD LUCK!
+
+      //EXRCISE 01**********
+      function enter_number() {
+        var numbersInput = prompt("Enter A Number Please");
+        console.log(numbersInput);
+        console.log(typeof numbersInput);
+        numbersInput = Number(numbersInput);
+        console.log(typeof numbersInput);
+        // conditions
+        if (numbersInput >= 0 && numbersInput <= 100) {
+          console.log("small");
+          alert("the number is small");
+        } else if (numbersInput >= 101 && numbersInput <= 1000) {
+          console.log("medium");
+          alert("the number is medium");
+        } else if (numbersInput > 1000) {
+          console.log("large");
+          alert("the number is large");
+        }
+      }
+
+      //EXRCISE 02**********
+      function nameInput() {
+        var fName = prompt("enter first name please");
+        console.log(fName);
+        var lName = prompt("Enter last name please");
+        console.log(lName);
+        alert(fName + " " + lName + ", " + "ברוך שובך למערכת.");
+      }
+
+      //EXRCISE 03**********
+      function password() {
+        var password = prompt("enter password please");
+        console.log(password);
+        if (password == "hackeru123456") {
+          alert("הזיהוי בוצע בהצלחה");
+        } else {
+          alert("הסיסמה שגויה, יש צורך בזיהוי");
+        }
+      }
+      //EXRCISE 04*********
+      function gate() {
+        var gateAge = prompt("Enter your age please");
+        console.log(gateAge);
+        gateAge = Number(gateAge);
+        if (gateAge < 16) {
+          alert("אינך מורשה להיכנס!");
+        } else if (gateAge >= 16 && gateAge <= 18) {
+          alert("אתה רשאי להיכנס באישור הורה");
+        } else if (gateAge > 18) {
+          alert("אתה מוזמן להצטרף");
+        }
+      }
+      //EXRCISE 05*********
+      function cal() {
+        var num1 = prompt("Enter number 1");
+        var num2 = prompt("Enter number 2");
+        var num3 = prompt("Enter number 3");
+        console.log(num1);
+        console.log(num2);
+        console.log(num3);
+        num1 = Number(num1);
+        num2 = Number(num2);
+        num3 = Number(num3);
+        var pOrm = prompt("enter + or -");
+        console.log(pOrm);
+        if (pOrm == "+") {
+          console.log(num1 + num2 + num3);
+          alert(num1 + num2 + num3);
+        } else if (pOrm == "-") {
+          console.log(num1 - num2 - num3);
+          alert(num1 - num2 - num3);
+        }
+      }
+    </script>
+  </head>
+  <body style="text-align: center;">
+    <!-- test - text parts -->
+    <h1 style="background-color: aqua; color: rgb(255, 255, 255);">Shlomo Daniel Test</h1>
+    <p>שלמה דניאל גינדי</p>
+    <br />
+    <p>מספר טלפון: 0542041964</p>
+    <br />
+    <p>המורכב ביותר בפרוייקט היה - כתיבת תנאים ארוכים ב js</p>
+    <br />
+    <p>נהנתי בכל רגע של כתיבה פתרון בעיות והכרת השפות שלמדנו</p>
+    <br />
+    <p>
+      לדעתי התחום מתאים לי כי אני אוהב את הכתיבה עצמה פתרון בעיות ומסתדר היטב עם
+      איך שמחשב עובד לוגית ואף אני מופתע עד כמה למעשה אני נהנה לכתוב קוד
+    </p>
+    <br />
+    <p>
+      נהנהתי מאוד להכיר את הקאריו, המרצים ממש נדיבים הרושם מקצועי, ממש היה שווה
+      לנסות למעשה.
+    </p>
+    <br />
+    <hr />
+    <!-- test - all the buttons -->
+    <h2>Here Are The Buttons</h2>
+    <button id="b01" onclick="enter_number()">Exrecise 01 - numbers</button>
+    <br />
+    <button id="b02" onclick="nameInput()">Exrecise 02 - name</button>
+    <br />
+    <button id="b03" onclick="password()">Login</button>
+    <br />
+    <button id="b04" onclick="gate()">Enter your age</button>
+    <br />
+    <button id="b05" onclick="cal()">calculate</button>
+    <br />
+    <br />
+    <span style="color: aqua">The End</span>
+  </body>
+</html>

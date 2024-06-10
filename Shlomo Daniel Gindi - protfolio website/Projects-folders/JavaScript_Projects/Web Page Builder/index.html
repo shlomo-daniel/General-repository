@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    <script src="script.js" defer></script>
+    <title>Web Page Builder</title>
+</head>
+
+<body>
+    <div id="frame">
+        <div id="panelSide">
+
+            <h1>Web Page Builder</h1>
+
+            <!-- Navigtion tabs -->
+            <nav>
+                <a class="active" onclick="pageToShow('General-Design', this)">General Design</a>
+                <a onclick="pageToShow('elements', this)">Elements</a>
+            </nav>
+
+            <!-- general settings section -->
+            <div id="General-Design" class="show">
+
+                <div class="field">
+                    <label>Background</label>
+                    <input type="color" oninput="bgcPage(this)">
+                </div>
+
+                <div class="field">
+                    <label>Page Inner Space</label>
+                    <input type="number" value="16" oninput="paddingChange(this)">
+                </div>
+
+                <div class="field">
+                    <label>Font Style</label>
+                    <select oninput="fontStyle(this)">
+                        <option value=""></option>
+                        <option value="Rubik">Rubik</option>
+                        <option value="Roboto">Roboto</option>
+                        <option value="Jacquard">Jacquard</option>
+                        <option value="Dancing Script">Dancing Script</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>Font Weight</label>
+                    <select oninput="fontWeight(this)">
+                        <option value=""></option>
+                        <option value="300">300</option>
+                        <option value="500">500</option>
+                        <option value="600">600</option>
+                        <option value="700">700</option>
+                        <option value="800">800</option>
+                        <option value="900">900</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>Italic</label>
+                    <select oninput="isFontItalic(this)">
+                        <option value=""></option>
+                        <option value="italic">Yes</option>
+                        <option value="">No</option>
+                    </select>
+                </div>
+                <button onclick="savePage()">Save Page</button>
+                <button onclick="loadPage()">Load Page</button>
+                <button onclick="printPage()">Print</button>
+            </div>
+
+            <!-- choosing element to add --------------->
+            <div id="elements">
+                <div class="field">
+                    <label>Elements</label>
+                    <select oninput="selecTypeElem(this)" onchange="resetInputs()">
+                        <option></option>
+                        <option value="title">Heading</option>
+                        <option value="p">Paragraph</option>
+                        <option value="input">Input Field</option>
+                        <option value="button">Button</option>
+                        <option value="img">Image</option>
+                        <option value="hr">Spacer</option>
+                    </select>
+                </div>
+
+                <!-- global inputs --------------->
+                <div id="params">
+                    <!-- select input type field   -->
+                    <div id="inputType" class="field">
+                        <label>Input Type</label>
+                        <select>
+                            <option value=""></option>
+                            <option value="text">Text</option>
+                            <option value="number">Number</option>
+                            <option value="date">Date</option>
+                            <option value="time">Time</option>
+                        </select>
+                    </div>
+                    <!-- headers -->
+                    <div id="headerType" class="field">
+                        <label>Heading Type</label>
+                        <select>
+                            <option></option>
+                            <option>h1</option>
+                            <option>h2</option>
+                            <option>h3</option>
+                            <option>h4</option>
+                            <option>h5</option>
+                            <option>h6</option>
+                        </select>
+                    </div>
+                    <!-- font size -->
+                    <div id="fontSize" class="field">
+                        <label>Font Size</label>
+                        <input type="number">
+                    </div>
+                    <!-- text color -->
+                    <div id="color" class="field">
+                        <label>Text Color</label>
+                        <input type="color">
+                    </div>
+                    <!-- content input field -->
+                    <div id="content" class="field">
+                        <label>Content</label>
+                        <input type="text">
+                    </div>
+                    <!-- text align -->
+                    <div id="textAlign" class="field">
+                        <label>Text Align</label>
+                        <select>
+                            <option value=""></option>
+                            <option value="left">Left</option>
+                            <option value="right">Right</option>
+                            <option value="center">Center</option>
+                        </select>
+                    </div>
+                    <!-- image src -->
+                    <div id="imageLink" class="field">
+                        <label>Image Link</label>
+                        <input type="url">
+                    </div>
+                    <!-- image size -->
+                    <div id="size" class="field">
+                        <label>Image Size</label>
+                        <input type="number">
+                    </div>
+                    <!-- align image -->
+                    <div id="align" class="field">
+                        <label>Align Image</label>
+                        <select>
+                            <option value=""></option>
+                            <option value="0">Left</option>
+                            <option value="">Right</option>
+                            <option value="auto">Center</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- add changes button -->
+                <button onclick="addToPage()">Add</button>
+                <button class="negetive-button" onclick="resetInputs()">Clear Inputs</button>
+            </div>
+        </div>
+
+        <!-- main output page -->
+        <div id="outputMain">
+            <div id="page" class="print" contenteditable="true"></div>
+        </div>
+    </div>
+</body>
+
+</html>

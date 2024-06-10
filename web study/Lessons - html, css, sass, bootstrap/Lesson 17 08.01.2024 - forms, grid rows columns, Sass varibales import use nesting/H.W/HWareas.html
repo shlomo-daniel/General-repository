@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>areas</title>
+    <style>
+        .container {
+            width: 1000px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100px 200px 400px 100px;
+            gap: 15px;
+
+            grid-template-areas:
+                "header header header header"
+                "box1 box2 box3 aside"
+                "main main main aside"
+                "footer footer footer footer"
+            ;
+        }
+
+        .item {
+            background-color: hotpink;
+            padding: 20px;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .box1 {
+            grid-area: box1;
+        }
+
+        .box2 {
+            grid-area: box2;
+        }
+
+        .box3 {
+            grid-area: box3;
+        }
+
+        .aside {
+            grid-area: aside;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item header">header</div>
+        <div class="item box1">box</div>
+        <div class="item box2">box 2</div>
+        <div class="item box3">box 3</div>
+        <div class="item main">main</div>
+        <div class="item aside">aside</div>
+        <div class="item footer">footer</div>
+    </div>
+</body>
+
+</html>

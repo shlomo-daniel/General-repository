@@ -1,0 +1,24 @@
+h1 { 
+    color: rgb(0, 255, 38);
+}
+
+h2 {
+    color: rgb(34, 121, 0);
+}
+
+h1, body, a, .call {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: aquamarine;
+} 
+
+.center_text {
+    text-align: center;
+    color: aqua;
+    font-size: 25px;
+}
+
+.offer {
+    font-size: 35px;
+    align-content: center;
+}

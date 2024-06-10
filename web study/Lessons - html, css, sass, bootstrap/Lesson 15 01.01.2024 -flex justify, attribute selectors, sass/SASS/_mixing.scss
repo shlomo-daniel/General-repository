@@ -1,0 +1,25 @@
+@mixin boxm($width: 100px, $height: 100px) {
+    width: $width;
+    height: $height;
+    background-color: #2bff00;
+    color: #5c0000;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 20px;
+}
+
+.boxm1 {
+    @include boxm(200px, 100px);
+}
+
+.boxm2 {
+    @include boxm(10px, 150px);
+}
+
+.boxm3 {
+    @include boxm(300px, 70px);
+}
+
+.boxm4 {
+    @include boxm();
+}

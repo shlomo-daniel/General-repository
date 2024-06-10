@@ -1,0 +1,252 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Assistant;
+  src: url(../fonts/Assistant-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Assistant_regular;
+  src: url(../fonts/Assistant_static_fonts/Assistant-Regular.ttf);
+}
+@font-face {
+  font-family: Heebo-Bold;
+  src: url(../fonts/Heebo-Bold.ttf);
+}
+body {
+  background-color: #E5EEFF;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.container-grid {
+  display: grid;
+  gap: 1.25em;
+  justify-content: center;
+  padding-inline: 40px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  grid-template-areas: "trees-on-waters two-persons discover_area discover_area" "beach cow discover_area discover_area" "far-tree surfers sun-set palm-trees" "form_area form_area monkey sleeping-man" "form_area form_area fields train" "form_area form_area round-building little-boat";
+}
+
+img {
+  max-width: 296px;
+}
+
+.discover-area {
+  background-color: #020253;
+  font-family: Assistant;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: discover_area;
+  max-width: 613px;
+  direction: rtl;
+  line-height: 1.8;
+}
+
+.discover-area h1 {
+  font-family: Assistant;
+  font-weight: bold;
+  font-size: 3.8125rem;
+  color: #0EE1DA;
+}
+
+.discover-area p {
+  font-family: Assistant;
+  font-weight: normal;
+  font-size: 1.25rem;
+  color: white;
+}
+
+#trees-on-waters {
+  grid-area: trees-on-waters;
+}
+
+#two-persons {
+  grid-area: two-persons;
+}
+
+#beach {
+  grid-area: beach;
+}
+
+#cow {
+  grid-area: cow;
+}
+
+#sun-set {
+  grid-area: sun-set;
+}
+
+#palm-trees {
+  grid-area: palm-trees;
+}
+
+#far-tree {
+  grid-area: far-tree;
+}
+
+#surfers {
+  grid-area: surfers;
+}
+
+.form-area {
+  background-color: #8E097C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: form_area;
+  max-width: 613px;
+  direction: rtl;
+}
+
+.form-area-heading {
+  text-align: center;
+  margin-bottom: 5em;
+  line-height: 2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+}
+
+.form-area h2 {
+  font-family: Assistant;
+  font-weight: bold;
+  font-size: 2.1875rem;
+  color: white;
+}
+
+.form-area p {
+  font-family: Assistant;
+  font-weight: normal;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.form-area label {
+  color: #0EE1DA;
+  font-family: Heebo-Bold;
+  font-size: 1rem;
+}
+
+label[for=email],
+label[for=tell-us] {
+  margin-top: 0.625em;
+}
+
+.form-area input {
+  background-color: #E5EEFF;
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-bottom: 5px solid #0EE1DA;
+}
+
+textarea {
+  width: 500px;
+  background-color: #E5EEFF;
+  border: none;
+  border-bottom: 5px solid #0EE1DA;
+  resize: none;
+}
+
+.form-area input[type=submit] {
+  color: #011560;
+  font-family: Heebo-Bold;
+  font-size: 1.5rem;
+  background-color: #0EE1DA;
+  margin-top: 0.8em;
+}
+
+#monkey {
+  grid-area: monkey;
+}
+
+#sleeping-man {
+  grid-area: sleeping-man;
+}
+
+#fields {
+  grid-area: fields;
+}
+
+#train {
+  grid-area: train;
+}
+
+#round-building {
+  grid-area: round-building;
+}
+
+#little-boat {
+  grid-area: little-boat;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: -moz-min-content;
+    width: min-content;
+  }
+  .container-grid {
+    gap: 0.75em;
+    grid-auto-columns: 1fr;
+    grid-template-areas: " discover_area discover_area" " discover_area discover_area" "trees-on-waters two-persons" "beach cow" "sun-set palm-trees" "far-tree surfers" "form_area form_area" "form_area form_area" "form_area form_area" "monkey sleeping-man" "fields train" "round-building little-boat";
+  }
+  img {
+    max-width: 159px;
+  }
+  .discover-area {
+    max-width: 370px;
+    min-height: 340px;
+    text-align: center;
+  }
+  .discover-area h1 {
+    font-size: 2.25rem;
+  }
+  .discover-area p {
+    font-size: 1.25rem;
+  }
+  form {
+    max-width: 278px;
+  }
+  .form-area-heading {
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    line-height: 1.8;
+    max-width: 278px;
+  }
+  .form-area h2 {
+    font-size: 1.5625rem;
+  }
+  .form-area p {
+    font-size: 0.9375rem;
+  }
+  .form-area input {
+    width: 100%;
+    height: 33px;
+    border: none;
+    border-bottom: 3px solid #0EE1DA;
+  }
+  textarea {
+    max-width: 278px;
+  }
+  .form-area input[type=submit] {
+    font-size: 0.75rem;
+    margin-top: 0.8em;
+    margin-bottom: 5em;
+  }
+}/*# sourceMappingURL=main.css.map */

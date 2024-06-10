@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pics Show</title>
+
+    <style>
+        /* reset!!! */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* container */
+        .container {
+            /* look */
+            /* border: 9px solid #000; */
+            width: 100vw;
+            height: 100vh;
+        }
+
+        /* small pic CSS --------------------------------*/
+        .smallPics {
+            /* pos */
+            position: absolute;
+            top: 180px;
+            left: 30px;
+            display: flex;
+            flex-direction: column;
+            /* look */
+
+        }
+
+
+        /* big pics CSS--------------------------------- */
+        img.bigpic {
+            /* pos */
+            position: absolute;
+            left: 290px;
+            top: -105px;
+            display: none;
+            /* look */
+            width: 900px;
+            border: 4px solid gray;
+        }
+
+        /* hover pointer*/
+        .Hover:hover {
+            cursor: pointer;
+            border: 2px solid rgb(255, 38, 38);
+        }
+
+        /* show main pic */
+        .Hover:hover~img {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- small pics bar -->
+        <div class="smallPics">
+            <!-- Rean -->
+            <div class="smallPic thRean"><img src="thRean.gif" alt="thRean" class="thRean Hover">
+
+                <img src="bigRean.jpg" alt="bigRean" class="bigpic bigRean bigInnerImage">
+            </div>
+            <!-- Olivert -->
+            <div class=" smallPic thOlivert"><img src="thOlivert.gif" alt="thOlivert" class="thOlivert Hover">
+
+                <img src="bigOlivert.jpg" alt="bigOlivert" class="bigpic bigOlivert bigInnerImage">
+            </div>
+            <!-- Crow -->
+            <div class="smallPic thCrow"><img src="thCrow.gif" alt="thCrow" class="thCrow Hover">
+
+                <img src="bigCrow.jpg" alt="bigCrow" class="bigpic bigCrow bigInnerImage">
+            </div>
+            <!-- Laura -->
+            <div class="smallPic thLaura"><img src="thLaura.gif" alt="thLaura" class="thLaura Hover">
+
+                <img src="bigLaura.jpg" alt="bigLaura" class="bigpic bigLaura bigInnerImage">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

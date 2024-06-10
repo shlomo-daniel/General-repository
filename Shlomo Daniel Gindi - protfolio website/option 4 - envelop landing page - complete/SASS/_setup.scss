@@ -1,0 +1,12 @@
+// reset
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// fonts - one file for all the weights
+@font-face {
+    font-family: Assistant;
+    src: url(./fonts/Assistant-VariableFont_wght.ttf);
+}

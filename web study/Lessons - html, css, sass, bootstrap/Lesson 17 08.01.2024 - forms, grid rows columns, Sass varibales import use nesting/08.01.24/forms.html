@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        form {
+            display: flex;
+        }
+
+        label {
+            display: block;
+            font-size: 1.3rem;
+            color: #639;
+        }
+
+        div {
+            margin: 10px;
+        }
+
+        #first-name {
+            border: 1px dashed #00f;
+            color: magenta;
+        }
+
+        ::placeholder {
+            color: magenta;
+            font-style: italic;
+        }
+
+        textarea {
+            resize: none;
+            width: 400px;
+            height: 200px;
+            display: block;
+        }
+
+        input[type=submit] {
+            width: 200px;
+            padding: 20px;
+            background-color: lightskyblue;
+            font-size: 1.2rem;
+            border-radius: 8px;
+        }
+
+        @media (max-width:650px) {
+            form {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--  form>(label+input+br)*2 -->
+    <form action="server-side-program" method="post">
+        <div>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" placeholder="first-name">
+        </div>
+        <div>
+            <label for="">Last Name:</label>
+            <input type="text" placeholder="last name">
+        </div>
+        <div>
+            <label for="">Problem info:</label>
+            <textarea name="" id="" maxlength="10"></textarea>
+        </div>
+        <div>
+            <label for="">Hobbies</label>
+            <input type="checkbox" name="" id="">Books
+            <input type="checkbox" name="" id="">Music
+            <input type="checkbox" name="" id="">Sport
+        </div>
+        <div>
+            <!-- label{gender}+input:radio*3 -->
+            <label for="">Gender</label>
+            <input type="radio" name="gender" id="">Male
+            <input type="radio" name="gender" id="">Female
+            <input type="radio" name="gender" id="">Undefiend
+        </div>
+        <div>
+            <!-- select{What Did I Do?}>option*5 -->
+            <label for="">What Did I Do?</label>
+            <select name="" id="">
+                <option value="">Tel Aviv</option>
+                <option value="">Ramat Gan</option>
+                <option value="">Hadera</option>
+                <option value="">Bat Yam</option>
+                <option value="">Haifa</option>
+            </select>
+        </div>
+        <div>
+            HTML5 Tages:
+            <label for="">Email</label>
+            <input type="email" name="" id="" required>
+            <label for="">Number</label>
+            <input type="number" name="" max="1000" min="100" step="100" id="" required>
+            <label for="">Date</label>
+            <input type="date" name="" id="" required>
+            <label for="">Color</label>
+            <input type="color" name="" id="" required>
+        </div>
+
+        <input type="submit" value="Send">
+    </form>
+
+</body>
+
+</html>

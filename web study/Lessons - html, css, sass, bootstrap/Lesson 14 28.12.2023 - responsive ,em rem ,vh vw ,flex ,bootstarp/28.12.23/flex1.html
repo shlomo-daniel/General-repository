@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            width: 800px;
+            height: 400px;
+            background-color: #999;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .item {
+            font-size: 1.3rem;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            flex-basis: 100px;
+        }
+
+        .item1 {
+            background-color: red;
+            flex-grow: 1;
+            order: 4;
+        }
+
+        .item2 {
+            background-color: green;
+            flex-grow: 1;
+            order: 1;
+        }
+
+        .item3 {
+            background-color: blue;
+            flex-grow: 1;
+            order: 2;
+        }
+
+        .item4 {
+            background-color: orange;
+            flex-grow: 1;
+            order: 3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- section>(.item.item${item$})*4 -->
+
+    <section>
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+        <div class="item item4">item4</div>
+    </section>
+
+
+</body>
+
+</html>

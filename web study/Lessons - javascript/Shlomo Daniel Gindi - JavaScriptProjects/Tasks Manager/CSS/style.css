@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap');
+
+:root {
+    --bg: linear-gradient(83deg, rgba(7, 248, 136, 1) 9%, rgba(7, 240, 248, 1) 100%, rgba(7, 248, 15, 1) 100%);
+
+
+    --light_green: #07f888;
+    --light_blue: #07f0f8;
+    --strong_green: #07f80f;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background: var(--bg);
+}
+
+.frame {
+    width: 80%;
+    max-width: 900px;
+    min-height: 300px;
+    margin: auto;
+
+    border-radius: 6px;
+
+    background-color: white;
+    box-shadow: 0 0 4px #00000059;
+
+    padding: 16px;
+    padding-bottom: 100px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+
+    margin: 1em;
+    text-shadow: 1px 0px 1px black;
+}
+
+h2 {
+    font-size: 1.7rem;
+    color: rgb(30, 255, 187);
+    font-weight: bold;
+
+    padding: 0.6em 0;
+    margin: 0px;
+
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+h2+p {
+    font-size: 0.8rem;
+
+    text-align: center;
+
+    max-width: 300px;
+    width: 100%;
+
+    margin: 0 auto;
+    margin-bottom: 0.7em;
+}
+
+.task {
+    border-bottom: 1px solid #c1c1c1;
+    padding-bottom: 12px;
+}
+
+input,
+select {
+    border: 1px solid gray;
+    border-radius: 2px;
+
+    max-width: 300px;
+    width: 100%;
+    height: 30px;
+
+    margin-top: 3px;
+    margin: 0 auto;
+
+    display: block;
+
+    padding: 0px 5px;
+
+    text-align: center;
+}
+
+button.addButton {
+    background: var(--bg);
+    color: white;
+    font-size: 1.1rem;
+
+    max-width: 300px;
+    width: 100%;
+    height: 30px;
+
+
+    border-radius: 2px;
+    border: none;
+    margin: 0 auto;
+
+    display: block;
+}
+
+button:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+ul button {
+    width: 25px;
+    height: 25px;
+
+    background: var(--light_blue);
+
+    border: 0px solid black;
+    border-radius: 4px;
+
+    margin: 0.15em;
+}
+
+ul,
+ol {
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    border-bottom: 1px solid #cccccc;
+
+    display: flex;
+    align-items: center;
+
+    margin: 0 10px;
+
+}
+
+li:first-child {
+    border-top: 1px solid #cccccc;
+
+    margin-top: 1em;
+}
+
+li>div {
+    padding: 12px 8px;
+    width: 100%;
+    outline: 0;
+}
+
+/* .bolded-li {
+    font-weight: bold;
+} */
