@@ -53,7 +53,7 @@ const createCard = (country) => {
     cardBody.appendChild(cardText);
 
     createdCard.appendChild(cardBody);
-    cardFooter.appendChild(heartIcon);
+    // cardFooter.appendChild(heartIcon);
     createdCard.appendChild(cardFooter);
 
     cardsWrap.appendChild(createdCard);
