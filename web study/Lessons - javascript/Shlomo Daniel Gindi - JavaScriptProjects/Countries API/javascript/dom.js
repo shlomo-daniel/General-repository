@@ -39,24 +39,33 @@ const createCard = (country) => {
     const cardFooter = document.createElement('div');
     cardFooter.className = 'card-footer d-flex justify-content-center';
 
-    // // const heartIcon = document.createElement('i');
-    // // heartsArray.push(heartIcon);
-    // // heartIcon.className = 'fa fa-heart text-secondary';
-    // // heartIcon.addEventListener("click", () => {
-    // //     heartIcon.classList.toggle("text-danger")
-    // });
+    // trying to load heart and load when there is hearted
+    const heartIcon = document.createElement('i');
+    heartIcon.className = 'fa fa-heart text-secondary';
+    heartIcon.addEventListener("click", heartIt);
+    heartsArray.push(heartIcon);
+    appendHearts(cardFooter);
 
     // append elems
     createdCard.appendChild(cardimg);
 
     cardBody.appendChild(cardTitle);
+
     cardBody.appendChild(cardText);
 
     createdCard.appendChild(cardBody);
-    // cardFooter.appendChild(heartIcon);
+
     createdCard.appendChild(cardFooter);
 
     cardsWrap.appendChild(createdCard);
+
+}
+
+function appendHearts(cardFooter) {
+    heartsArray.forEach(heart => {
+        cardFooter.appendChild(heart);
+        // console.log(heartsArray);
+    })
 }
 
 const createAllCards = () => {
@@ -65,15 +74,16 @@ const createAllCards = () => {
     });
 }
 
-// save hearted countries
-// heartsArray.forEach(heart => {
+function heartIt(evt) {
+    evt.target.classList.toggle("text-danger");
+    // heartsArray.push(evt.target)
+    console.log(heartsArray);
+    saveToLocal();
+}
 
-//     console.log(heart);
-
-// if (heart.className === "fa fa-heart text-secondary text-danger") {
-//     localStorage.heartSaved = heart;
-// }
-// console.log(localStorage.heartSaved);
-// })
+// save hearts to localstorage
+function saveToLocal() {
+    localStorage.savedHearts = heartsArray;
+}
 
 export { createAllCards };
