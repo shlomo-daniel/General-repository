@@ -21,7 +21,6 @@ function Card({
     toast("Card removed", { type: "success" });
   };
 
-  
   return (
     <>
       <div className="card" style={{ width: "18rem", height: "fit-content" }}>
