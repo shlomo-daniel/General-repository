@@ -26,19 +26,19 @@ nav {
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: #00FFDF;
+  background-color: #00ffdf;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
   border-bottom: 4px solid rgba(128, 128, 128, 0.205);
   background: rgb(0, 159, 255);
-  background: linear-gradient(90deg, rgb(0, 159, 255) 0%, rgb(0, 255, 223) 96%, rgb(0, 32, 255) 100%);
+  background: linear-gradient(0deg, rgb(0, 159, 255) 0%, rgb(0, 255, 223) 96%, rgb(0, 32, 255) 100%);
 }
 nav .nav_pic_and_myName {
   display: flex;
   align-items: center;
 }
 nav .nav_pic_and_myName .MyFace {
-  width: 50px;
+  width: 70px;
   height: auto;
   border-radius: 50%;
   margin-right: 2em;
@@ -56,7 +56,7 @@ nav .nav_menuList ul {
   display: flex;
 }
 nav .nav_menuList li {
-  font-family: "Gilda-Display";
+  font-family: "Inter-Tight";
   font-size: 1.2rem;
   list-style: none;
   margin-inline: 2em;
@@ -67,14 +67,14 @@ nav .nav_menuList li a {
   transition: color 300ms;
 }
 nav .nav_menuList li a:hover {
-  color: #0020FF;
+  color: #0020ff;
 }
 nav a {
   color: #000;
   text-decoration: none;
 }
 nav a:hover {
-  color: #0020FF;
+  color: #0020ff;
 }
 
 .section_for_whyYoureHere {
@@ -91,12 +91,13 @@ nav a:hover {
   font-size: 3.5em;
 }
 .section_for_whyYoureHere p {
-  font-family: "Gilda-Display", sans-serif;
+  font-family: "Inter-Tight", sans-serif;
   font-size: 1.3rem;
 }
 
 .tech_icons_bar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: baseline;
   padding-top: 1em;
@@ -110,6 +111,8 @@ nav a:hover {
   width: 50px;
   height: 40px;
   margin-inline: 1em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
 }
 .tech_icons_bar .tech_icons[src$="OOP.svg"] {
   width: auto;
@@ -130,7 +133,7 @@ nav a:hover {
   font-family: "Inter-Tight", sans-serif;
 }
 .section_projects .heading_forProjects p {
-  font-family: "Gilda-Display", sans-serif;
+  font-family: "Inter-Tight", sans-serif;
 }
 .section_projects .projects_cards {
   display: flex;
@@ -179,7 +182,7 @@ nav a:hover {
   font-size: 1.5rem;
 }
 .section_projects .projects_cards .card-project p {
-  font-family: "Gilda-Display", sans-serif;
+  font-family: "Inter-Tight", sans-serif;
   font-size: 0.9rem;
 }
 .section_projects .projects_cards .card-project .card_small_icons_technologies {
@@ -194,15 +197,17 @@ nav a:hover {
   width: 25px;
 }
 .section_projects .projects_cards .card-project a {
+  font-family: "Inter-Tight";
   text-decoration: none;
+  font-size: 0.9rem;
   color: black;
-  border: 1px solid #00FFDF;
+  border: 1px solid #00ffdf;
   border-radius: 15px;
   padding: 5px;
   padding-inline: 50px;
 }
 .section_projects .projects_cards .card-project a:hover {
-  background-color: #009FFF;
+  background-color: #009fff;
   color: white;
 }
 
@@ -222,7 +227,7 @@ nav a:hover {
   font-family: "Inter-Tight", sans-serif;
 }
 .section_projects_javascript .heading_forProjects p {
-  font-family: "Gilda-Display", sans-serif;
+  font-family: "Inter-Tight", sans-serif;
 }
 .section_projects_javascript .projects_cards_javascript {
   display: flex;
@@ -273,7 +278,7 @@ nav a:hover {
   margin-top: 0.5em;
 }
 .section_projects_javascript .projects_cards_javascript .card-project-javascript p {
-  font-family: "Gilda-Display", sans-serif;
+  font-family: "Inter-Tight", sans-serif;
   font-size: 0.9rem;
 }
 .section_projects_javascript .projects_cards_javascript .card-project-javascript .card_small_icons_technologies-javascript {
@@ -296,14 +301,16 @@ nav a:hover {
 }
 .section_projects_javascript .projects_cards_javascript .card-project-javascript a {
   text-decoration: none;
+  font-family: "Inter-Tight";
+  font-size: 0.9rem;
   color: black;
-  border: 1px solid #00FFDF;
+  border: 1px solid #00ffdf;
   border-radius: 15px;
   padding: 5px;
   padding-inline: 50px;
 }
 .section_projects_javascript .projects_cards_javascript .card-project-javascript a:hover {
-  background-color: #009FFF;
+  background-color: #009fff;
   color: white;
 }
 
@@ -330,21 +337,23 @@ nav a:hover {
   margin-bottom: 1em;
 }
 .section-aboutMe p {
-  font-family: "Gilda-Display", sans-serif;
+  font-family: "Inter-Tight", sans-serif;
   max-width: 600px;
   margin-bottom: 3.5em;
   margin-inline: 0.5em;
 }
 .section-aboutMe a {
   text-decoration: none;
+  font-family: "Inter-Tight";
+  font-size: 0.9rem;
   color: black;
-  border: 1px solid #00FFDF;
+  border: 1px solid #00ffdf;
   border-radius: 15px;
   padding: 5px;
   padding-inline: 50px;
 }
 .section-aboutMe a:hover {
-  background-color: #009FFF;
+  background-color: #009fff;
   color: white;
 }
 
@@ -361,11 +370,11 @@ footer .section_contactMe {
   margin-left: 3em;
   margin-top: 2em;
 }
-footer .section_contactMe .heading-contact h1 {
+footer .section_contactMe .heading-contact h2 {
   font-family: "Inter-Tight", sans-serif;
 }
 footer .section_contactMe .heading-contact p {
-  font-family: "Gilda-Display", sans-serif;
+  font-family: "Inter-Tight", sans-serif;
   max-width: 350px;
 }
 footer .section_contactMe form {
@@ -375,7 +384,7 @@ footer .section_contactMe form {
   width: 100%;
 }
 footer .section_contactMe form label {
-  font-family: "Gilda-Display", sans-serif;
+  font-family: "Inter-Tight", sans-serif;
   font-weight: bold;
   margin-top: 1em;
 }
@@ -383,7 +392,7 @@ footer .section_contactMe form input[type=text],
 footer .section_contactMe form input[type=email],
 footer .section_contactMe form input[type=number] {
   border: none;
-  border-bottom: 2px solid #00FFDF;
+  border-bottom: 2px solid #00ffdf;
   max-width: 350px;
   width: 100%;
   height: 40px;
@@ -392,23 +401,23 @@ footer .section_contactMe form input[type=number] {
 footer .section_contactMe form textarea {
   resize: none;
   border: none;
-  border-bottom: 2px solid #00FFDF;
+  border-bottom: 2px solid #00ffdf;
   max-width: 350px;
   width: 100%;
   background-color: rgba(128, 128, 128, 0.048);
 }
 footer .section_contactMe form input[type=submit] {
-  font-family: "Gilda-Display", sans-serif;
+  font-family: "Inter-Tight", sans-serif;
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0);
   margin-top: 1.5em;
-  border: 1px solid #00FFDF;
+  border: 1px solid #00ffdf;
   border-radius: 15px;
   padding: 5px;
   padding-inline: 50px;
 }
 footer .section_contactMe form input[type=submit]:hover {
-  background-color: #009FFF;
+  background-color: #009fff;
   color: white;
 }
 footer .contact-image img {
@@ -428,7 +437,7 @@ footer .contact-image img {
 }
 
 .section_creditMyName p {
-  font-family: "Gilda-Display", sans-serif;
+  font-family: "Inter-Tight", sans-serif;
   font-weight: bold;
   font-size: 0.9rem;
   padding-top: 15px;
@@ -444,19 +453,19 @@ footer .contact-image img {
   background: linear-gradient(90deg, rgb(0, 159, 255) 0%, rgb(0, 255, 223) 0%, rgb(0, 32, 255) 100%);
 }
 .section_for_whyYoureHere-project a {
-  font-family: "Gilda-Display", sans-serif;
+  font-family: "Inter-Tight", sans-serif;
   font-weight: bold;
   text-decoration: none;
   color: white;
   background-color: rgba(255, 255, 255, 0);
   margin-top: 1.5em;
-  border: 1px solid #00FFDF;
+  border: 1px solid #00ffdf;
   border-radius: 15px;
   padding: 5px;
   padding-inline: 50px;
 }
 .section_for_whyYoureHere-project a:hover {
-  background-color: #009FFF;
+  background-color: #009fff;
   color: white;
 }
 
@@ -547,7 +556,7 @@ footer .contact-image img {
     width: 100%;
   }
   .section_for_whyYoureHere-project .see-and-download a:hover {
-    background-color: #009FFF;
+    background-color: #009fff;
     color: white;
   }
   .big-pic-ofProject {

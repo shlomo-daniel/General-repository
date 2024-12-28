@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  min-height: 700px;
+}
+
+#heading-background {
+  background-color: rgb(180, 180, 180);
+  width: 100%;
+  max-width: 600px;
+  height: 250px;
+  margin: auto;
+
+  border-radius: 0 0 5px 5px;
+}
+
+#profile-image {
+  width: 250px;
+  border-radius: 20px;
+  transform: translateY(-14rem);
+
+  border: 10px solid;
+  border-image: radial-gradient(
+      ellipse farthest-corner at right bottom,
+      #fedb37 0%,
+      #fdb931 8%,
+      #9f7928 30%,
+      #8a6e2f 40%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at left top,
+      #ffffff 0%,
+      #ffffac 8%,
+      #d1b464 25%,
+      #5d4a1f 62.5%,
+      #5d4a1f 100%
+    );
+}

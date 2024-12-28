@@ -1,11 +1,11 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 // limit the width to be more useable
@@ -16,27 +16,28 @@ html {
 
 // headers font
 @font-face {
-    font-family: "Inter-Tight";
-    src: url(../fonts/Inter_Tight-headersFont/InterTight-VariableFont_wght.ttf)
+  font-family: "Inter-Tight";
+  src: url(../fonts/Inter_Tight-headersFont/InterTight-VariableFont_wght.ttf);
 }
 
 // text fonts
 @font-face {
-    font-family: "Gilda-Display";
-    src: url(../fonts/Gilda_Display/GildaDisplay-Regular.ttf);
+  font-family: "Gilda-Display";
+  src: url(../fonts/Gilda_Display/GildaDisplay-Regular.ttf);
 }
 
 @font-face {
-    font-family: "Joan";
-    src: url(../fonts/Joan/Joan-Regular.ttf);
+  font-family: "Joan";
+  src: url(../fonts/Joan/Joan-Regular.ttf);
 }
 
 // variables $ $ $
 
 // fonts
 $headers-font: "Inter-Tight";
-$all-text-font: "Gilda-Display";
+$all-text-font: "Inter-Tight";
+$buttons-font: "Inter-Tight";
 // colors
-$light-color: #00FFDF;
-$medium-color: #009FFF;
-$strong-color: #0020FF;
+$light-color: #00ffdf;
+$medium-color: #009fff;
+$strong-color: #0020ff;
