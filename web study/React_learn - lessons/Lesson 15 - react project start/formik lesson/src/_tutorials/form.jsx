@@ -76,15 +76,3 @@ function Form() {
 }
 
 export default Form;
-
-// const div = document.createElement("div");
-
-// const fn = (someName) => {
-//   console.log(someName);
-// };
-// div.addEventListener("click", fn);
-
-// // fn({
-// //   x: 443,
-// //   y: 55,
-// // });

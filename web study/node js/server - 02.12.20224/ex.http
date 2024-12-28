@@ -1,0 +1,10 @@
+@local=http://localhost:3000
+
+
+###
+GET {{local}}/home
+Content-Type: text/html
+
+{
+}
+

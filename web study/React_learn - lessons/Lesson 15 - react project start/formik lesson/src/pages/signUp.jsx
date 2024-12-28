@@ -12,6 +12,7 @@ function SignUp() {
       password: "",
     },
     validate(values) {
+      // a model to compare to later
       const schema = Joi.object({
         name: Joi.string().min(2).max(255).required().label("Name"),
         email: Joi.string()
@@ -23,7 +24,10 @@ function SignUp() {
         password: Joi.string().min(6).max(1024).required().label("Password"),
       });
 
+      //
       const { error } = schema.validate(values, { abortEarly: false });
+      console.dir(error);
+
       if (!error) {
         return null;
       }

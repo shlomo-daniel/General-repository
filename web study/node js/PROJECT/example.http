@@ -1,0 +1,44 @@
+@local=http://localhost:3005
+
+###
+ POST {{local}}/users
+ Content-Type: application/json
+
+ {
+    "name": "shlomil",
+    "email": "aslljhl@pop.com",
+    "biz": true,
+    "password": "unme555"
+ }
+
+### auth 
+POST {{local}}/api/auth
+Content-Type: application/json
+x-auth-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzYwNTJjNWM5ODNiYzI3MTViZTBjNTEiLCJiaXoiOnRydWUsImlhdCI6MTczNDYxNDIwMn0.cK1hGHn5AAWPGqIacD9myoS8sUMQLTuo_cIPoQWh9VM
+
+{ 
+    "name": "shlomil",
+    "email": "aslljhl@pop.com",
+    "biz": true,
+    "password": "unme555"
+}
+
+###
+POST   {{local}}/api/auth
+x-auth-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzYwNTJjNWM5ODNiYzI3MTViZTBjNTEiLCJiaXoiOnRydWUsImlhdCI6MTczNDYxNDIwMn0.cK1hGHn5AAWPGqIacD9myoS8sUMQLTuo_cIPoQWh9VM
+Content-Type: application/json
+
+{
+    "email": "aslljhl@pop.com",
+    "password": "unme555"
+}
+###
+POST {{local}}/api/cards
+Content-Type: application/json
+x-auth-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzYwNTJjNWM5ODNiYzI3MTViZTBjNTEiLCJiaXoiOnRydWUsImlhdCI6MTczNDYxNDIwMn0.cK1hGHn5AAWPGqIacD9myoS8sUMQLTuo_cIPoQWh9VM
+
+ {"bizName": "lolllo",
+    "bizDescription":"kkk ggg ddd sss" ,
+    "bizAddress": "jj hhgg gyyyyyy gghg",
+    "bizPhone": "050444777"
+ }

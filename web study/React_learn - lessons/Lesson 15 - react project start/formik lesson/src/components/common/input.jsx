@@ -18,8 +18,3 @@ function Input({ label, error, ...rest }) {
 }
 
 export default Input;
-
-// classNames("form-control", {
-//   "is-invalid": error,
-// });
-// https://www.npmjs.com/package/classnames
